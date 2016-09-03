@@ -123,6 +123,7 @@ class ViewController: UIViewController {
     let reversedGraph = SwiftGraph()
     
     var sccDict: Dictionary<Int, Int>?
+    var sccArray: [Int]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -159,16 +160,18 @@ class ViewController: UIViewController {
         }
         
         print("verticesCount = \(graph.verticesCount)")
-        //print("Normal graph:\n\(graph.edgeDescription())")
 
         self.firstDFSLoop(reversedGraph)
         //print("Reversed graph:\n\(reversedGraph.edgeDescription())")
         
         self.sccDict = Dictionary<Int, Int>()
+        self.sccArray = [Int]()
         
         self.secondDFSLoop(graph, reversedGraph: reversedGraph)
+
+        self.sccArray?.sortInPlace()
         
-        //print("SCC dict \(self.sccDict)")
+        print("SCC array \(self.sccArray)")
         
     }
     
@@ -204,8 +207,9 @@ class ViewController: UIViewController {
                     self.DFS(vertex, label: &label)
                     
                     let componentSize = label - labelBeforeDFS
-                    if self.sccDict != nil {
+                    if self.sccDict != nil && componentSize > 20 {
                         self.sccDict![vertex.key] = componentSize
+                        self.sccArray?.append(componentSize)
                     }
                 }
             }
@@ -218,27 +222,47 @@ class ViewController: UIViewController {
     func DFS(vertex: Vertex, inout label: Int) {
         
         vertex.explored = true
+        //print("vertex explored \(vertex.key)")
         
-        for neighbor in vertex.neighbors {
-            if neighbor.explored == false {
-                self.DFS(neighbor, label: &label)
+        var stack = VertexStack()
+        stack.push(vertex)
+        
+        while stack.items.count != 0 {
+            
+            var didPush = false
+            let top = stack.items.last!
+
+            for neighbor in top.neighbors {
+                if neighbor.explored == false {
+                    neighbor.explored = true
+                    //print("vertex explored \(neighbor.key)")
+                    stack.push(neighbor)
+                    didPush = true
+                    break
+                }
+            }
+            
+            if !didPush {
+                stack.pop()
+                label += 1
+                top.label = label
+                //print("top \(top.description()), label \(label)")
+                
+                didPush = false
             }
         }
-        
-        label += 1
-        vertex.label = label
     }
     
-    struct IntStack {
+    struct VertexStack {
         
-        var items = [Int]()
+        var items = [Vertex]()
         
-        mutating func push(item: Int) {
+        mutating func push(item: Vertex) {
             
             items.append(item)
         }
         
-        mutating func pop() -> Int {
+        mutating func pop() -> Vertex {
             
             return items.removeLast()
         }
