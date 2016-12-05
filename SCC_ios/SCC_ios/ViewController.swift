@@ -65,15 +65,15 @@ public class SwiftGraph {
         return canvas.keys.count
     }
     
-    func vertexForKey(key: Int) -> Vertex? {
+    func vertexForKey(_ key: Int) -> Vertex? {
         return canvas[key]
     }
     
-    func vertexForLabel(label: Int) -> Vertex? {
+    func vertexForLabel(_ label: Int) -> Vertex? {
         return canvasByLabels[label]
     }
     
-    func getOrCreateVertexForKey(key: Int) -> Vertex {
+    func getOrCreateVertexForKey(_ key: Int) -> Vertex {
         
         if let vertex = canvas[key] {
             return vertex
@@ -86,7 +86,7 @@ public class SwiftGraph {
         }
     }
     
-    func addEdge(source source: Vertex, neighbor: Vertex) {
+    func addEdge(source: Vertex, neighbor: Vertex) {
         
         if source.graph !== self || neighbor.graph !== self {
             print("serious problem")
@@ -131,9 +131,9 @@ class ViewController: UIViewController {
         var verticesArray = [String]()
         
         do {
-            let url: NSURL! = NSBundle.mainBundle().URLForResource("SCC", withExtension: "txt")
-            let string = try String(contentsOfURL: url, encoding: NSUTF8StringEncoding)
-            verticesArray = string.componentsSeparatedByString("\n")
+            let url: URL! = Bundle.main.url(forResource: "SCC", withExtension: "txt")
+            let string = try String(contentsOf: url, encoding: String.Encoding.utf8)
+            verticesArray = string.components(separatedBy: "\n")
             verticesArray.removeLast()
         }
         catch {
@@ -141,7 +141,7 @@ class ViewController: UIViewController {
         }
         
         for edgesString in verticesArray {
-            var edgesArray = edgesString.componentsSeparatedByString(" ")
+            var edgesArray = edgesString.components(separatedBy: " ")
             edgesArray.removeLast()
             
             var integers = edgesArray.map { Int($0)! }
@@ -169,17 +169,17 @@ class ViewController: UIViewController {
         
         self.secondDFSLoop(graph, reversedGraph: reversedGraph)
 
-        self.sccArray?.sortInPlace()
+        self.sccArray?.sort()
         
         print("SCC array \(self.sccArray)")
         
     }
     
-    func firstDFSLoop(graph: SwiftGraph) {
+    func firstDFSLoop(_ graph: SwiftGraph) {
         
         var label = 0
         
-        for i in graph.verticesCount.stride(to: 0, by: -1) {
+        for i in stride(from: graph.verticesCount, to: 0, by: -1) {
             if let vertex = graph.vertexForKey(i) {
                 if vertex.explored == false {
                     self.DFS(vertex, label: &label)
@@ -191,11 +191,11 @@ class ViewController: UIViewController {
         }
     }
     
-    func secondDFSLoop(graph: SwiftGraph, reversedGraph: SwiftGraph) {
+    func secondDFSLoop(_ graph: SwiftGraph, reversedGraph: SwiftGraph) {
         
         var label = 0
         
-        for i in graph.verticesCount.stride(to: 0, by: -1) {
+        for i in stride(from: graph.verticesCount, to: 0, by: -1) {
             if let vertexFromReversedGraph = reversedGraph.vertexForLabel(i),
                 let vertex = graph.vertexForKey(vertexFromReversedGraph.key) {
                 
@@ -219,7 +219,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func DFS(vertex: Vertex, inout label: Int) {
+    func DFS(_ vertex: Vertex, label: inout Int) {
         
         vertex.explored = true
         //print("vertex explored \(vertex.key)")
@@ -257,7 +257,7 @@ class ViewController: UIViewController {
         
         var items = [Vertex]()
         
-        mutating func push(item: Vertex) {
+        mutating func push(_ item: Vertex) {
             
             items.append(item)
         }

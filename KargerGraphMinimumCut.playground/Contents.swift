@@ -4,9 +4,9 @@ import UIKit
 
 extension Array where Element : Equatable {
     
-    mutating func removeObject(object : Generator.Element) {
-        while let index = self.indexOf(object) {
-            self.removeAtIndex(index)
+    mutating func removeObject(_ object : Iterator.Element) {
+        while let index = self.index(of: object) {
+            self.remove(at: index)
         }
     }
 }
@@ -20,7 +20,7 @@ struct Graph<T: Hashable> {
         directed = d
     }
     
-    mutating func addVertex(v: T) {
+    mutating func addVertex(_ v: T) {
         self[v] = [T]()
     }
     
@@ -50,7 +50,7 @@ struct Graph<T: Hashable> {
     }
 }
 
-func randomContraction(inout graph: Graph<Int>) {
+func randomContraction( _ graph: inout Graph<Int>) {
     
     let keys = [Int](graph.adj.keys)
     
@@ -113,7 +113,7 @@ for _ in 0...100 {
     var graph = Graph<Int>(directed: false)
     
     for edgesString in verticesArray {
-        var edgesArray = edgesString.componentsSeparatedByString("\t")
+        var edgesArray = edgesString.components(separatedBy: "\t")
         //edgesArray.removeLast()
         var integers = edgesArray.map { Int($0)! }
         let from = integers.removeFirst()

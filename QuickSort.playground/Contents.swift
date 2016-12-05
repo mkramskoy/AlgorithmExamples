@@ -2,7 +2,7 @@
 import UIKit
 
 
-func quickSort(array: [Int], pivotChoice: PivotChoiceType, inout numberOfComparisons: Int) -> [Int] {
+func quickSort(_ array: [Int], pivotChoice: PivotChoiceType, numberOfComparisons: inout Int) -> [Int] {
     
     guard array.count > 1 else {
         return array
@@ -16,41 +16,41 @@ func quickSort(array: [Int], pivotChoice: PivotChoiceType, inout numberOfCompari
     numberOfComparisons += array.count - 1
     
     var sortedArray = [Int]()
-    sortedArray.appendContentsOf(quickSort(partitionResult.leftPart, pivotChoice: pivotChoice, numberOfComparisons: &numberOfComparisons))
+    sortedArray.append(contentsOf: quickSort(partitionResult.leftPart, pivotChoice: pivotChoice, numberOfComparisons: &numberOfComparisons))
     sortedArray.append(partitionResult.pivot)
-    sortedArray.appendContentsOf(quickSort(partitionResult.rightPart, pivotChoice: pivotChoice, numberOfComparisons: &numberOfComparisons))
+    sortedArray.append(contentsOf: quickSort(partitionResult.rightPart, pivotChoice: pivotChoice, numberOfComparisons: &numberOfComparisons))
     
     return sortedArray
 }
 
 enum PivotChoiceType {
-    case FirstElement
-    case LastElement
-    case Median
-    case Random
+    case firstElement
+    case lastElement
+    case median
+    case random
 }
 
-func choosePivot(array: [Int], pivotChoice: PivotChoiceType) -> Int {
+func choosePivot(_ array: [Int], pivotChoice: PivotChoiceType) -> Int {
     
     switch pivotChoice {
-    case .FirstElement:
+    case .firstElement:
         return 0
-    case .LastElement:
+    case .lastElement:
         return array.count - 1
-    case .Median:
+    case .median:
         let firstElement = array[0]
         let middleElement = array[(array.count - 1)/2]
         let lastElement = array[array.count - 1]
         
         let median = max(min(firstElement, middleElement), min(max(firstElement,middleElement),lastElement))
-        return array.indexOf(median)!
+        return array.index(of: median)!
         
-    case .Random:
+    case .random:
         return Int(arc4random_uniform(UInt32(array.count)))
     }
 }
 
-func partitionAroundPivot(pivotIndex: Int, array: [Int]) -> (leftPart: [Int], rightPart: [Int], pivot:Int) {
+func partitionAroundPivot(_ pivotIndex: Int, array: [Int]) -> (leftPart: [Int], rightPart: [Int], pivot:Int) {
     
     var partitionedArray = array
     (partitionedArray[0], partitionedArray[pivotIndex]) = (partitionedArray[pivotIndex], partitionedArray[0])
@@ -76,7 +76,7 @@ func partitionAroundPivot(pivotIndex: Int, array: [Int]) -> (leftPart: [Int], ri
 let unsortedArray = [3,9,8,4,6,10,2,5,7,1]
 
 var numberOfComparisons = 0
-let sortedArray = quickSort(unsortedArray, pivotChoice:.Median, numberOfComparisons: &numberOfComparisons)
+let sortedArray = quickSort(unsortedArray, pivotChoice:.median, numberOfComparisons: &numberOfComparisons)
 
 print("\(numberOfComparisons)")
 print("\(sortedArray)")
