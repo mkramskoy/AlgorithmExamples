@@ -1,12 +1,12 @@
 //
-//  QueueWithTwoStacks.m
+//  WRQueueWithTwoStacks.m
 //  WhiteBoardPreparation
 //
 //  Created by Michael Kramskoy on 11/18/16.
 //  Copyright © 2016 Connector. All rights reserved.
 //
 
-#import "QueueWithTwoStacks.h"
+#import "WRQueueWithTwoStacks.h"
 
 @interface Stack: NSObject
 
@@ -120,7 +120,7 @@
 
 @end
 
-@implementation QueueWithTwoStacks
+@implementation WRQueueWithTwoStacks
 
 + (void)run {
     

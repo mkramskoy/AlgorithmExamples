@@ -9,15 +9,3 @@
 import Foundation
 
 Test.run()
-
-//QuickSort.run()
-//BreadthFirstSearch.run()
-//LinkedListReverse.run()
-//DFS.run()
-//AddTwoBinaryNumbers.run()
-//BracersBalance.run()
-//QueueWithTwoStacks.run()
-//StackWithMaxNumber.run()
-//SubstringExistsInParent.run()
-//MaxHeapSort.run()
-

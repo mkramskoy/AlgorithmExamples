@@ -1,60 +1,31 @@
 //
-//  StackWithMaxNumber.m
+//  WRStackWithMaxNumber.m
 //  WhiteBoardPreparation
 //
 //  Created by Michael Kramskoy on 11/24/16.
 //  Copyright © 2016 Connector. All rights reserved.
 //
 
-#import "StackWithMaxNumber.h"
+#import "WRStackWithMaxNumber.h"
+#import "WRLinkedList.h"
 
-@implementation Node
+@interface WRMaxNumberStack()
 
-@end
-
-@implementation LinkedList
-
-- (void)push:(NSNumber*)object {
-    
-    Node *node = [Node new];
-    node.value = object;
-    node.next = self.head;
-    
-    self.head = node;
-}
-
-- (NSNumber*)pop {
-    
-    NSNumber *valueToReturn = self.head.value;
-    self.head = self.head.next;
-    
-    return valueToReturn;
-}
-
-- (NSNumber*)peek {
-    
-    return self.head.value;
-}
-
-@end
-
-@interface MaxNumberStack()
-
-@property (nonatomic, strong) LinkedList *list;
-@property (nonatomic, strong) LinkedList *maxValueList;
+@property (nonatomic, strong) WRLinkedList *list;
+@property (nonatomic, strong) WRLinkedList *maxValueList;
 
 @end
 
 
-@implementation MaxNumberStack
+@implementation WRMaxNumberStack
 
 - (id)init {
     
     self = [super init];
     
     if (self) {
-        self.list = [LinkedList new];
-        self.maxValueList = [LinkedList new];
+        self.list = [WRLinkedList new];
+        self.maxValueList = [WRLinkedList new];
     }
     
     return self;
@@ -65,7 +36,7 @@
     [self.list push:object];
     
     if ( self.maxValueList.head != nil ) {
-        NSInteger currentMax = self.maxValueList.head.value.integerValue;
+        NSInteger currentMax = ((NSNumber*)self.maxValueList.head.value).integerValue;
         if ( currentMax < object.integerValue ) {
             [self.maxValueList push:object];
         }
@@ -100,11 +71,11 @@
 @end
 
 
-@implementation StackWithMaxNumber
+@implementation WRStackWithMaxNumber
 
 + (void)run {
     
-    MaxNumberStack *stack = [MaxNumberStack new];
+    WRMaxNumberStack *stack = [WRMaxNumberStack new];
     
     [stack addObject:@3];
     [stack addObject:@1];

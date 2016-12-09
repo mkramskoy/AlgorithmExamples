@@ -2,7 +2,11 @@
 //  Use this file to import your target's public headers that you would like to expose to Swift.
 //
 
-#import "BracersBalance.h"
-#import "QueueWithTwoStacks.h"
-#import "StackWithMaxNumber.h"
-#import "SubstringExistsInParent.h"
+#import "WRBracersBalance.h"
+#import "WRQueueWithTwoStacks.h"
+#import "WRStackWithMaxNumber.h"
+#import "WRSubstringExistsInParent.h"
+#import "WRLinkedListReverse.h"
+#import "WRLinkedList.h"
+#import "WRPrimeNumber.h"
+#import "WRAnagram.h"

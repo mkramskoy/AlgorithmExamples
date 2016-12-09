@@ -8,16 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		7605937A1DC2959F00530126 /* AddTwoBinaryNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760593791DC2959F00530126 /* AddTwoBinaryNumbers.swift */; };
-		7618C3F51DDB7B1200F3481B /* BracersBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = 7618C3F41DDB7B1200F3481B /* BracersBalance.m */; };
-		762424941DDF8EDC000C5A69 /* QueueWithTwoStacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 762424931DDF8EDC000C5A69 /* QueueWithTwoStacks.m */; };
+		7618C3F51DDB7B1200F3481B /* WRBracersBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = 7618C3F41DDB7B1200F3481B /* WRBracersBalance.m */; };
+		762424941DDF8EDC000C5A69 /* WRQueueWithTwoStacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 762424931DDF8EDC000C5A69 /* WRQueueWithTwoStacks.m */; };
+		762AE7021DF7059C004A9629 /* WRLinkedListReverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 762AE7011DF7059C004A9629 /* WRLinkedListReverse.m */; };
 		762D43C51DF4B06A001B98F8 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762D43C41DF4B06A001B98F8 /* Heap.swift */; };
 		762D43C71DF5B12C001B98F8 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762D43C61DF5B12C001B98F8 /* Queue.swift */; };
 		763656691DBB78D8007196AF /* BFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763656681DBB78D8007196AF /* BFS.swift */; };
 		7636566B1DBB7B6C007196AF /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636566A1DBB7B6C007196AF /* QuickSort.swift */; };
 		7636566D1DBBA2D8007196AF /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636566C1DBBA2D8007196AF /* Range.swift */; };
 		7636566F1DBE7239007196AF /* MaxHeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636566E1DBE7239007196AF /* MaxHeapSort.swift */; };
-		763F5EA71DE7497300751A6E /* StackWithMaxNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 763F5EA61DE7497300751A6E /* StackWithMaxNumber.m */; };
-		7662895A1DF189EC001BAAE5 /* SubstringExistsInParent.m in Sources */ = {isa = PBXBuildFile; fileRef = 766289591DF189EC001BAAE5 /* SubstringExistsInParent.m */; };
+		763F5EA71DE7497300751A6E /* WRStackWithMaxNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 763F5EA61DE7497300751A6E /* WRStackWithMaxNumber.m */; };
+		7652E3431DFB51C90034E4D8 /* WRPrimeNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 7652E3421DFB51C90034E4D8 /* WRPrimeNumber.m */; };
+		7652E3461DFB55D40034E4D8 /* WRAnagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 7652E3451DFB55D40034E4D8 /* WRAnagram.m */; };
+		7662895A1DF189EC001BAAE5 /* WRSubstringExistsInParent.m in Sources */ = {isa = PBXBuildFile; fileRef = 766289591DF189EC001BAAE5 /* WRSubstringExistsInParent.m */; };
 		76B45C0B1DB6AB3600B762C2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B45C0A1DB6AB3600B762C2 /* main.swift */; };
 		76B45C121DB7C28000B762C2 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B45C111DB7C28000B762C2 /* MergeSort.swift */; };
 		76C32B7A1DC103DD0080FAC0 /* DFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C32B791DC103DD0080FAC0 /* DFS.swift */; };
@@ -27,6 +30,7 @@
 		76C9431B1DF62A33009DDB14 /* MoveZeroesToTheRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9431A1DF62A33009DDB14 /* MoveZeroesToTheRight.swift */; };
 		76DF46451DCF58010025C8FA /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF46441DCF58010025C8FA /* LinkedList.swift */; };
 		76DF464A1DCF8C710025C8FA /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF46491DCF8C710025C8FA /* Test.swift */; };
+		76F94B641DF70BFF004FD4D6 /* WRLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F94B631DF70BFF004FD4D6 /* WRLinkedList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,20 +48,26 @@
 /* Begin PBXFileReference section */
 		760593791DC2959F00530126 /* AddTwoBinaryNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTwoBinaryNumbers.swift; sourceTree = "<group>"; };
 		7618C3F01DDB7AD400F3481B /* WhiteBoardPreparation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhiteBoardPreparation-Bridging-Header.h"; sourceTree = "<group>"; };
-		7618C3F31DDB7B1200F3481B /* BracersBalance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BracersBalance.h; sourceTree = "<group>"; };
-		7618C3F41DDB7B1200F3481B /* BracersBalance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BracersBalance.m; sourceTree = "<group>"; };
-		762424921DDF8EDC000C5A69 /* QueueWithTwoStacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueWithTwoStacks.h; sourceTree = "<group>"; };
-		762424931DDF8EDC000C5A69 /* QueueWithTwoStacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueWithTwoStacks.m; sourceTree = "<group>"; };
+		7618C3F31DDB7B1200F3481B /* WRBracersBalance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRBracersBalance.h; sourceTree = "<group>"; };
+		7618C3F41DDB7B1200F3481B /* WRBracersBalance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRBracersBalance.m; sourceTree = "<group>"; };
+		762424921DDF8EDC000C5A69 /* WRQueueWithTwoStacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRQueueWithTwoStacks.h; sourceTree = "<group>"; };
+		762424931DDF8EDC000C5A69 /* WRQueueWithTwoStacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRQueueWithTwoStacks.m; sourceTree = "<group>"; };
+		762AE7001DF7059C004A9629 /* WRLinkedListReverse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRLinkedListReverse.h; sourceTree = "<group>"; };
+		762AE7011DF7059C004A9629 /* WRLinkedListReverse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRLinkedListReverse.m; sourceTree = "<group>"; };
 		762D43C41DF4B06A001B98F8 /* Heap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		762D43C61DF5B12C001B98F8 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		763656681DBB78D8007196AF /* BFS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFS.swift; sourceTree = "<group>"; };
 		7636566A1DBB7B6C007196AF /* QuickSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		7636566C1DBBA2D8007196AF /* Range.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Range.swift; sourceTree = "<group>"; };
 		7636566E1DBE7239007196AF /* MaxHeapSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxHeapSort.swift; sourceTree = "<group>"; };
-		763F5EA51DE7497300751A6E /* StackWithMaxNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackWithMaxNumber.h; sourceTree = "<group>"; };
-		763F5EA61DE7497300751A6E /* StackWithMaxNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackWithMaxNumber.m; sourceTree = "<group>"; };
-		766289581DF189EC001BAAE5 /* SubstringExistsInParent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubstringExistsInParent.h; sourceTree = "<group>"; };
-		766289591DF189EC001BAAE5 /* SubstringExistsInParent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubstringExistsInParent.m; sourceTree = "<group>"; };
+		763F5EA51DE7497300751A6E /* WRStackWithMaxNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRStackWithMaxNumber.h; sourceTree = "<group>"; };
+		763F5EA61DE7497300751A6E /* WRStackWithMaxNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRStackWithMaxNumber.m; sourceTree = "<group>"; };
+		7652E3411DFB51C90034E4D8 /* WRPrimeNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRPrimeNumber.h; sourceTree = "<group>"; };
+		7652E3421DFB51C90034E4D8 /* WRPrimeNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRPrimeNumber.m; sourceTree = "<group>"; };
+		7652E3441DFB55D40034E4D8 /* WRAnagram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRAnagram.h; sourceTree = "<group>"; };
+		7652E3451DFB55D40034E4D8 /* WRAnagram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRAnagram.m; sourceTree = "<group>"; };
+		766289581DF189EC001BAAE5 /* WRSubstringExistsInParent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRSubstringExistsInParent.h; sourceTree = "<group>"; };
+		766289591DF189EC001BAAE5 /* WRSubstringExistsInParent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRSubstringExistsInParent.m; sourceTree = "<group>"; };
 		76B45C071DB6AB3600B762C2 /* WhiteBoardPreparation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WhiteBoardPreparation; sourceTree = BUILT_PRODUCTS_DIR; };
 		76B45C0A1DB6AB3600B762C2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		76B45C111DB7C28000B762C2 /* MergeSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
@@ -68,6 +78,8 @@
 		76C9431A1DF62A33009DDB14 /* MoveZeroesToTheRight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveZeroesToTheRight.swift; sourceTree = "<group>"; };
 		76DF46441DCF58010025C8FA /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		76DF46491DCF8C710025C8FA /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		76F94B621DF70BFF004FD4D6 /* WRLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRLinkedList.h; sourceTree = "<group>"; };
+		76F94B631DF70BFF004FD4D6 /* WRLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRLinkedList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +97,12 @@
 			isa = PBXGroup;
 			children = (
 				762D43C61DF5B12C001B98F8 /* Queue.swift */,
-				7618C3F31DDB7B1200F3481B /* BracersBalance.h */,
-				7618C3F41DDB7B1200F3481B /* BracersBalance.m */,
-				762424921DDF8EDC000C5A69 /* QueueWithTwoStacks.h */,
-				762424931DDF8EDC000C5A69 /* QueueWithTwoStacks.m */,
-				763F5EA51DE7497300751A6E /* StackWithMaxNumber.h */,
-				763F5EA61DE7497300751A6E /* StackWithMaxNumber.m */,
+				7618C3F31DDB7B1200F3481B /* WRBracersBalance.h */,
+				7618C3F41DDB7B1200F3481B /* WRBracersBalance.m */,
+				762424921DDF8EDC000C5A69 /* WRQueueWithTwoStacks.h */,
+				762424931DDF8EDC000C5A69 /* WRQueueWithTwoStacks.m */,
+				763F5EA51DE7497300751A6E /* WRStackWithMaxNumber.h */,
+				763F5EA61DE7497300751A6E /* WRStackWithMaxNumber.m */,
 			);
 			name = "Stack & Queue";
 			sourceTree = "<group>";
@@ -107,8 +119,10 @@
 		766289571DF189CD001BAAE5 /* Strings */ = {
 			isa = PBXGroup;
 			children = (
-				766289581DF189EC001BAAE5 /* SubstringExistsInParent.h */,
-				766289591DF189EC001BAAE5 /* SubstringExistsInParent.m */,
+				766289581DF189EC001BAAE5 /* WRSubstringExistsInParent.h */,
+				766289591DF189EC001BAAE5 /* WRSubstringExistsInParent.m */,
+				7652E3441DFB55D40034E4D8 /* WRAnagram.h */,
+				7652E3451DFB55D40034E4D8 /* WRAnagram.m */,
 			);
 			name = Strings;
 			sourceTree = "<group>";
@@ -147,6 +161,8 @@
 			children = (
 				7636566C1DBBA2D8007196AF /* Range.swift */,
 				760593791DC2959F00530126 /* AddTwoBinaryNumbers.swift */,
+				7652E3411DFB51C90034E4D8 /* WRPrimeNumber.h */,
+				7652E3421DFB51C90034E4D8 /* WRPrimeNumber.m */,
 			);
 			name = SimpleLogic;
 			sourceTree = "<group>";
@@ -195,6 +211,10 @@
 		76DF46481DCF58630025C8FA /* LinkedList */ = {
 			isa = PBXGroup;
 			children = (
+				76F94B621DF70BFF004FD4D6 /* WRLinkedList.h */,
+				76F94B631DF70BFF004FD4D6 /* WRLinkedList.m */,
+				762AE7001DF7059C004A9629 /* WRLinkedListReverse.h */,
+				762AE7011DF7059C004A9629 /* WRLinkedListReverse.m */,
 				76C32B7D1DC162780080FAC0 /* LinkedListReverse.swift */,
 				76DF46441DCF58010025C8FA /* LinkedList.swift */,
 			);
@@ -262,24 +282,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				76C32B7C1DC124F70080FAC0 /* BinarySearch.swift in Sources */,
-				7618C3F51DDB7B1200F3481B /* BracersBalance.m in Sources */,
+				7618C3F51DDB7B1200F3481B /* WRBracersBalance.m in Sources */,
 				7636566F1DBE7239007196AF /* MaxHeapSort.swift in Sources */,
+				7652E3431DFB51C90034E4D8 /* WRPrimeNumber.m in Sources */,
 				76B45C121DB7C28000B762C2 /* MergeSort.swift in Sources */,
 				762D43C51DF4B06A001B98F8 /* Heap.swift in Sources */,
 				7605937A1DC2959F00530126 /* AddTwoBinaryNumbers.swift in Sources */,
 				76C9431B1DF62A33009DDB14 /* MoveZeroesToTheRight.swift in Sources */,
 				76B45C0B1DB6AB3600B762C2 /* main.swift in Sources */,
 				76C32B801DC23D740080FAC0 /* Graph.swift in Sources */,
+				762AE7021DF7059C004A9629 /* WRLinkedListReverse.m in Sources */,
 				76DF464A1DCF8C710025C8FA /* Test.swift in Sources */,
 				76DF46451DCF58010025C8FA /* LinkedList.swift in Sources */,
 				76C32B7E1DC162780080FAC0 /* LinkedListReverse.swift in Sources */,
 				763656691DBB78D8007196AF /* BFS.swift in Sources */,
-				7662895A1DF189EC001BAAE5 /* SubstringExistsInParent.m in Sources */,
-				763F5EA71DE7497300751A6E /* StackWithMaxNumber.m in Sources */,
+				7662895A1DF189EC001BAAE5 /* WRSubstringExistsInParent.m in Sources */,
+				763F5EA71DE7497300751A6E /* WRStackWithMaxNumber.m in Sources */,
 				762D43C71DF5B12C001B98F8 /* Queue.swift in Sources */,
 				7636566B1DBB7B6C007196AF /* QuickSort.swift in Sources */,
+				76F94B641DF70BFF004FD4D6 /* WRLinkedList.m in Sources */,
 				76C32B7A1DC103DD0080FAC0 /* DFS.swift in Sources */,
-				762424941DDF8EDC000C5A69 /* QueueWithTwoStacks.m in Sources */,
+				762424941DDF8EDC000C5A69 /* WRQueueWithTwoStacks.m in Sources */,
+				7652E3461DFB55D40034E4D8 /* WRAnagram.m in Sources */,
 				7636566D1DBBA2D8007196AF /* Range.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

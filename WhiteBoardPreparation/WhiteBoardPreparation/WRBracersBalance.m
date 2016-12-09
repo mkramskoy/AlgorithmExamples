@@ -1,24 +1,24 @@
 //
-//  BracersBalance.m
+//  WRBracersBalance.m
 //  WhiteBoardPreparation
 //
 //  Created by Michael Kramskoy on 11/15/16.
 //  Copyright © 2016 Connector. All rights reserved.
 //
 
-#import "BracersBalance.h"
+#import "WRBracersBalance.h"
 
-@implementation BracersBalance
+@implementation WRBracersBalance
 
 
 + (void)run {
 
     NSString *string = @"{([])()()}{([])}";
 
-    NSLog(@"%@", [self isBracersBalanced:string] ? @"YES" : @"NO");
+    NSLog(@"%@", [self isWRBracersBalanced:string] ? @"YES" : @"NO");
 }
 
-+ (BOOL)isBracersBalanced:(NSString*)string {
++ (BOOL)isWRBracersBalanced:(NSString*)string {
     
     NSSet *leftBracers = [[NSSet alloc] initWithArray:@[@"{", @"(", @"["]];
     NSDictionary *accordanceMap = @{ @"}" : @"{", @"]": @"[", @")" : @"("};

@@ -1,5 +1,5 @@
 //
-//  BracersBalance.h
+//  WRBracersBalance.h
 //  WhiteBoardPreparation
 //
 //  Created by Michael Kramskoy on 11/15/16.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BracersBalance : NSObject
+@interface WRBracersBalance : NSObject
 
 + (void)run;
 
