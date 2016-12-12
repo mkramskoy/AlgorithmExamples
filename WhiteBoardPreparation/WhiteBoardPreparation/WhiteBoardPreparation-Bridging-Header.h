@@ -10,3 +10,4 @@
 #import "WRLinkedList.h"
 #import "WRPrimeNumber.h"
 #import "WRAnagram.h"
+#import "WRRunningMedian.h"

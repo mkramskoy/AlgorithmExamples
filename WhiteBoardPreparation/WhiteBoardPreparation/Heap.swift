@@ -24,8 +24,6 @@ class MaxHeap <T: Comparable> {
     
     func peekMaxElement() -> T? {
         
-        if array.count == 0 { return nil }
-        
         return array.first
     }
     
@@ -72,7 +70,7 @@ class MaxHeap <T: Comparable> {
         var child = index
         var parent = self.parent(of: index)
         
-        while (child >= 0 && array[parent] < array[child]) {
+        while (child >= 0 && array[child] > array[parent] ) {
             swap(&array[parent], &array[child])
             
             child = parent
