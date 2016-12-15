@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		760048601E00096B00694CA6 /* WRBinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 7600485F1E00096B00694CA6 /* WRBinarySearch.m */; };
 		7605937A1DC2959F00530126 /* AddTwoBinaryNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760593791DC2959F00530126 /* AddTwoBinaryNumbers.swift */; };
 		7618C3F51DDB7B1200F3481B /* WRBracersBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = 7618C3F41DDB7B1200F3481B /* WRBracersBalance.m */; };
 		762424941DDF8EDC000C5A69 /* WRQueueWithTwoStacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 762424931DDF8EDC000C5A69 /* WRQueueWithTwoStacks.m */; };
@@ -21,6 +22,7 @@
 		7652E3431DFB51C90034E4D8 /* WRPrimeNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 7652E3421DFB51C90034E4D8 /* WRPrimeNumber.m */; };
 		7652E3461DFB55D40034E4D8 /* WRAnagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 7652E3451DFB55D40034E4D8 /* WRAnagram.m */; };
 		7662895A1DF189EC001BAAE5 /* WRSubstringExistsInParent.m in Sources */ = {isa = PBXBuildFile; fileRef = 766289591DF189EC001BAAE5 /* WRSubstringExistsInParent.m */; };
+		766B659F1E0349360086AF3B /* WRBinarySearchInString.m in Sources */ = {isa = PBXBuildFile; fileRef = 766B659E1E0349360086AF3B /* WRBinarySearchInString.m */; };
 		7689F3DD1DFF16C500F30CB2 /* WRHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = 7689F3DC1DFF16C500F30CB2 /* WRHeap.m */; };
 		7689F3E01DFF1AC000F30CB2 /* WRRunningMedian.m in Sources */ = {isa = PBXBuildFile; fileRef = 7689F3DF1DFF1AC000F30CB2 /* WRRunningMedian.m */; };
 		76B45C0B1DB6AB3600B762C2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B45C0A1DB6AB3600B762C2 /* main.swift */; };
@@ -48,6 +50,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7600485E1E00096B00694CA6 /* WRBinarySearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRBinarySearch.h; sourceTree = "<group>"; };
+		7600485F1E00096B00694CA6 /* WRBinarySearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRBinarySearch.m; sourceTree = "<group>"; };
 		760593791DC2959F00530126 /* AddTwoBinaryNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTwoBinaryNumbers.swift; sourceTree = "<group>"; };
 		7618C3F01DDB7AD400F3481B /* WhiteBoardPreparation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhiteBoardPreparation-Bridging-Header.h"; sourceTree = "<group>"; };
 		7618C3F31DDB7B1200F3481B /* WRBracersBalance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRBracersBalance.h; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 		7652E3451DFB55D40034E4D8 /* WRAnagram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRAnagram.m; sourceTree = "<group>"; };
 		766289581DF189EC001BAAE5 /* WRSubstringExistsInParent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRSubstringExistsInParent.h; sourceTree = "<group>"; };
 		766289591DF189EC001BAAE5 /* WRSubstringExistsInParent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRSubstringExistsInParent.m; sourceTree = "<group>"; };
+		766B659D1E0349360086AF3B /* WRBinarySearchInString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRBinarySearchInString.h; sourceTree = "<group>"; };
+		766B659E1E0349360086AF3B /* WRBinarySearchInString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRBinarySearchInString.m; sourceTree = "<group>"; };
 		7689F3DB1DFF16C500F30CB2 /* WRHeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRHeap.h; sourceTree = "<group>"; };
 		7689F3DC1DFF16C500F30CB2 /* WRHeap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRHeap.m; sourceTree = "<group>"; };
 		7689F3DE1DFF1AC000F30CB2 /* WRRunningMedian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRRunningMedian.h; sourceTree = "<group>"; };
@@ -133,6 +139,8 @@
 				766289591DF189EC001BAAE5 /* WRSubstringExistsInParent.m */,
 				7652E3441DFB55D40034E4D8 /* WRAnagram.h */,
 				7652E3451DFB55D40034E4D8 /* WRAnagram.m */,
+				766B659D1E0349360086AF3B /* WRBinarySearchInString.h */,
+				766B659E1E0349360086AF3B /* WRBinarySearchInString.m */,
 			);
 			name = Strings;
 			sourceTree = "<group>";
@@ -173,6 +181,8 @@
 				760593791DC2959F00530126 /* AddTwoBinaryNumbers.swift */,
 				7652E3411DFB51C90034E4D8 /* WRPrimeNumber.h */,
 				7652E3421DFB51C90034E4D8 /* WRPrimeNumber.m */,
+				7600485E1E00096B00694CA6 /* WRBinarySearch.h */,
+				7600485F1E00096B00694CA6 /* WRBinarySearch.m */,
 			);
 			name = SimpleLogic;
 			sourceTree = "<group>";
@@ -292,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76C32B7C1DC124F70080FAC0 /* BinarySearch.swift in Sources */,
+				766B659F1E0349360086AF3B /* WRBinarySearchInString.m in Sources */,
 				7618C3F51DDB7B1200F3481B /* WRBracersBalance.m in Sources */,
 				7689F3E01DFF1AC000F30CB2 /* WRRunningMedian.m in Sources */,
 				7636566F1DBE7239007196AF /* MaxHeapSort.swift in Sources */,
@@ -316,6 +327,7 @@
 				76C32B7A1DC103DD0080FAC0 /* DFS.swift in Sources */,
 				762424941DDF8EDC000C5A69 /* WRQueueWithTwoStacks.m in Sources */,
 				7652E3461DFB55D40034E4D8 /* WRAnagram.m in Sources */,
+				760048601E00096B00694CA6 /* WRBinarySearch.m in Sources */,
 				7636566D1DBBA2D8007196AF /* Range.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

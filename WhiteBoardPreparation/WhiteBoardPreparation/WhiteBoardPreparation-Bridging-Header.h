@@ -11,3 +11,5 @@
 #import "WRPrimeNumber.h"
 #import "WRAnagram.h"
 #import "WRRunningMedian.h"
+#import "WRBinarySearch.h"
+#import "WRBinarySearchInString.h"
