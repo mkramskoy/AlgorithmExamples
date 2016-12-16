@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+@interface NSString(WRIndexOfSubstring)
+
+- (NSUInteger)indexOfSubstring:(NSString*)substring;
+
+@end
+
 @interface WRSubstringExistsInParent : NSObject
 
 + (void)run;

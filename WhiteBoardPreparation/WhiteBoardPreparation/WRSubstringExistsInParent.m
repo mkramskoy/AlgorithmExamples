@@ -12,57 +12,42 @@
 
 + (void)run {
     
-    __unused NSInteger result1 = [self indexOfSubstring:@"ABC" inParent:@"MNABCOP"];
-    __unused NSInteger result2 = [self indexOfSubstring:@"ABC" inParent:@"FDABABC"];
-    __unused NSInteger result3 = [self indexOfSubstring:@"AB" inParent:@"BA"];
+    __unused NSInteger result1 = [@"MNABCOP" indexOfSubstring:@"ABC"];
+    __unused NSInteger result2 = [@"FDABABC" indexOfSubstring:@"ABC"];
+    __unused NSInteger result3 = [@"BA" indexOfSubstring:@"AB"];
+    __unused NSInteger result4 = [@"AB" indexOfSubstring:@"AB"];
+    __unused NSInteger result5 = [@"AaAB" indexOfSubstring:@"AB"];
 }
 
+@end
 
-+ (NSInteger)indexOfSubstring:(NSString*)string inParent:(NSString*)parent {
-    
-    if ( string == nil || string.length > parent.length ) {
-        return -1;
-    }
-    
-    for ( int i=0; i<parent.length; i++ ) {
-        if ( [self stringExists:string atIndex:i inParent:parent] ) {
-            return i;
-        }
-    }
-    
-    return -1;
-}
+@implementation NSString(WRIndexOfSubstring)
 
-+ (BOOL)stringExists:(NSString*)string atIndex:(NSInteger)index inParent:(NSString*)parent {
+- (NSUInteger)indexOfSubstring:(NSString*)substring {
     
-    if ( string.length + index > parent.length ) {
-        return NO;
+    if ( !substring || substring.length > self.length ) {
+        return NSNotFound;
     }
     
-    if ( [string characterAtIndex:0] != [parent characterAtIndex:index] ||
-         [string characterAtIndex:string.length-1] != [parent characterAtIndex:index+string.length-1] ) {
-        return NO;
-    }
-    
-    int charsMatched = 2;
-    for ( int j = 1; j<string.length-1; j++ ) {
-        unichar charInParent = [parent characterAtIndex:index+j];
-        unichar charInChild = [string characterAtIndex:j];
+    for ( int i=0; i < self.length - substring.length + 1; i++) {
+        unichar firstLetter = [self characterAtIndex:i];
+        unichar lastLetter = [self characterAtIndex:i+substring.length-1];
         
-        if (charInParent == charInChild) {
-            charsMatched++;
-        }
-        else {
-            break;
-        }
-        
-        if ( charsMatched == string.length ) {
-            return YES;
+        if ( firstLetter == [substring characterAtIndex:0] && lastLetter == [substring characterAtIndex:substring.length - 1] ) {
+            BOOL mismatchFound = NO;
+            for ( int j=1; j<substring.length-1; j++) {
+                if ( [self characterAtIndex:i+j] != [substring characterAtIndex:j] ) {
+                    mismatchFound = YES;
+                }
+            }
+            
+            if ( !mismatchFound ) {
+                return i;
+            }
         }
     }
     
-    return NO;
+    return NSNotFound;
 }
-
 
 @end
