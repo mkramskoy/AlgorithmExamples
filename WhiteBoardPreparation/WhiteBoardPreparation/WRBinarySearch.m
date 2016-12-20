@@ -21,7 +21,7 @@
 //    NSLog(@"Index using native method = %lu", index);
     
     for ( int i = 0; i < array.count; i++) {
-        NSUInteger index = [self indexOfObject:@(i) inSortedArray:array];
+        NSUInteger index = [array binarySearchForObject:@(i)];
         
         if ( index != i ) {
             NSLog(@"AAAA!");
@@ -29,23 +29,35 @@
     }
 }
 
-+ (NSUInteger)indexOfObject:(NSNumber*)number inSortedArray:(NSArray*)array {
+@end
+
+@implementation NSArray(BinarySearch)
+
+- (NSUInteger)binarySearchForObject:(NSNumber*)number {
     
-    NSUInteger lowerBound = 0;
-    NSUInteger upperBound = array.count;
+    return [self binarySearchForObject:number inRange:NSMakeRange(0, self.count)];
+}
+
+- (NSUInteger)binarySearchForObject:(NSNumber*)number inRange:(NSRange)range {
     
-    while (upperBound-lowerBound > 1) {
-        NSUInteger center = lowerBound + (upperBound - lowerBound)/2;
-        if ( number.integerValue < [array[center] integerValue] ) {
-            upperBound = center;
+    NSInteger lowerBound = range.location;
+    NSInteger upperBound = range.location + range.length - 1;
+    
+    while (upperBound - lowerBound >= 0) {
+        NSUInteger centerIndex = lowerBound + (upperBound - lowerBound)/2;
+        NSUInteger centerValue = [[self objectAtIndex:centerIndex] integerValue];
+        if ( number.integerValue == centerValue ) {
+            return centerIndex;
+        }
+        else if ( number.integerValue < centerValue ) {
+            upperBound = centerValue - 1;
         }
         else {
-            lowerBound = center;
+            lowerBound = centerValue + 1;
         }
     }
     
-    return lowerBound;
+    return NSNotFound;
 }
-
 
 @end

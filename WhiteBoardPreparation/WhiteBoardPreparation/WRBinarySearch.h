@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@interface NSArray(BinarySearch)
+
+- (NSUInteger)binarySearchForObject:(NSNumber*)number inRange:(NSRange)range;
+- (NSUInteger)binarySearchForObject:(NSNumber*)number;
+
+@end
+
 @interface WRBinarySearch : NSObject
 
 + (void)run;

@@ -13,3 +13,5 @@
 #import "WRRunningMedian.h"
 #import "WRBinarySearch.h"
 #import "WRBinarySearchInString.h"
+#import "WR2SumProblem.h"
+#import "WRMergeSort.h"

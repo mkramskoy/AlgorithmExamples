@@ -8,6 +8,35 @@
 
 import Foundation
 
+class BreadthFirstSearch {
+    
+    class func run() {
+        
+        let graph = Graph()
+        
+        let nodeA = Vertex(label: "a")
+        graph.addVertex(nodeA)
+        let nodeB = Vertex(label: "b")
+        graph.addVertex(nodeB)
+        let nodeC = Vertex(label: "c")
+        graph.addVertex(nodeC)
+        let nodeD = Vertex(label: "d")
+        graph.addVertex(nodeD)
+        let nodeE = Vertex(label: "e")
+        graph.addVertex(nodeE)
+        
+        let _ = nodeA.addEdge(to: nodeB)
+        let _ = nodeB.addEdge(to: nodeE)
+        let _ = nodeC.addEdge(to: nodeE)
+        let _ = nodeD.addEdge(to: nodeB)
+        let _ = nodeE.addEdge(to: nodeD)
+        
+        let graphCopy = graph.copyWithBFS()
+        
+        print("Original graph:\n\(graph.description())\nGraph copy:\n\(graphCopy.description())")
+    }
+}
+
 extension Graph {
     
     func copyWithBFS() -> Graph {
@@ -60,35 +89,6 @@ extension Graph {
                 edgeBlock(edge)
             }
         }
-    }
-}
-
-class BreadthFirstSearch {
-    
-    class func run() {
-        
-        let graph = Graph()
-        
-        let nodeA = Vertex(label: "a")
-        graph.addVertex(nodeA)
-        let nodeB = Vertex(label: "b")
-        graph.addVertex(nodeB)
-        let nodeC = Vertex(label: "c")
-        graph.addVertex(nodeC)
-        let nodeD = Vertex(label: "d")
-        graph.addVertex(nodeD)
-        let nodeE = Vertex(label: "e")
-        graph.addVertex(nodeE)
-        
-        let _ = nodeA.addEdge(to: nodeB)
-        let _ = nodeB.addEdge(to: nodeE)
-        let _ = nodeC.addEdge(to: nodeE)
-        let _ = nodeD.addEdge(to: nodeB)
-        let _ = nodeE.addEdge(to: nodeD)
-        
-        let graphCopy = graph.copyWithBFS()
-        
-        print("Original graph:\n\(graph.description())\nGraph copy:\n\(graphCopy.description())")
     }
 }
 

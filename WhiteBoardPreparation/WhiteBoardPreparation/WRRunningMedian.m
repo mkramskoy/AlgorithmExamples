@@ -11,8 +11,8 @@
 
 @interface WRRunningMedian()
 
-@property (nonatomic, strong) WRHeap *maxHeap;
-@property (nonatomic, strong) WRHeap *minHeap;
+@property (nonatomic, strong) WRHeap *maxHeap; // left part
+@property (nonatomic, strong) WRHeap *minHeap; // right part
 
 @end
 
@@ -22,12 +22,31 @@
     
     WRRunningMedian *median = [WRRunningMedian new];
     
-    [median addNumber:@12];
-    [median addNumber:@4];
-    [median addNumber:@5];
-    [median addNumber:@3];
-    [median addNumber:@8];
-    [median addNumber:@7];
+//    [median addNumber:@12];
+//    [median addNumber:@4];
+//    [median addNumber:@5];
+//    [median addNumber:@3];
+//    [median addNumber:@8];
+//    [median addNumber:@7];
+    
+    NSURL *fileURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"Median" withExtension:@"txt"];
+    
+    NSError *error = nil;
+    NSString *string = [NSString stringWithContentsOfURL:fileURL encoding:NSUTF8StringEncoding error:&error];
+    if ( error ) {
+        NSLog(@"error reading file");
+    }
+    
+    __block NSUInteger medianSumModulo = 0;
+    __block NSUInteger counter = 0;
+    [string enumerateLinesUsingBlock:^(NSString * _Nonnull line, BOOL * _Nonnull stop) {
+        [median addNumber:@([line integerValue])];
+        NSUInteger currentMedian = [[median calculateMedian] integerValue];
+        medianSumModulo = (medianSumModulo + currentMedian);
+        counter++;
+    }];
+    
+    NSLog(@"Median Sum Modulo = %lu", medianSumModulo % 10000);
 }
 
 - (instancetype)init {
@@ -35,8 +54,8 @@
     self = [super init];
     
     if ( self ) {
-        self.maxHeap = [[WRHeap alloc] initWithType:WRHeapTypeMax];
-        self.minHeap = [[WRHeap alloc] initWithType:WRHeapTypeMin];
+        self.maxHeap = [[WRHeap alloc] initWithType:WRHeapTypeMax]; // left part
+        self.minHeap = [[WRHeap alloc] initWithType:WRHeapTypeMin]; // right part
     }
     
     return self;
@@ -77,10 +96,8 @@
     if ( self.minHeap.count > self.maxHeap.count ) {
         return self.minHeap.peekExtremum;
     }
-    else if ( self.maxHeap.count > self.minHeap.count ) {
+    else {
         return self.maxHeap.peekExtremum;
-    } else {
-        return [NSNumber numberWithFloat:(self.minHeap.peekExtremum.floatValue + self.maxHeap.peekExtremum.floatValue)/2.f];
     }
 }
 
