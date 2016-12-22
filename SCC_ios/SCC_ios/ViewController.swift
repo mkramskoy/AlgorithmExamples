@@ -200,8 +200,6 @@ class ViewController: UIViewController {
                 let vertex = graph.vertexForKey(vertexFromReversedGraph.key) {
                 
                 if vertex.explored == false {
-                    //print("secondLoop vertex \(vertex.description())")
-                    
                     let labelBeforeDFS = label
                     
                     self.DFS(vertex, label: &label)
@@ -222,7 +220,6 @@ class ViewController: UIViewController {
     func DFS(_ vertex: Vertex, label: inout Int) {
         
         vertex.explored = true
-        //print("vertex explored \(vertex.key)")
         
         var stack = VertexStack()
         stack.push(vertex)
@@ -243,7 +240,7 @@ class ViewController: UIViewController {
             }
             
             if !didPush {
-                stack.pop()
+                let _ = stack.pop()
                 label += 1
                 top.label = label
                 //print("top \(top.description()), label \(label)")

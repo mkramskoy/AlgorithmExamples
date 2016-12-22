@@ -207,9 +207,9 @@
 			children = (
 				76C9431A1DF62A33009DDB14 /* MoveZeroesToTheRight.swift */,
 				760593791DC2959F00530126 /* AddTwoBinaryNumbers.swift */,
+				76C32B7B1DC124F70080FAC0 /* BinarySearch.swift */,
 				7600485E1E00096B00694CA6 /* WRBinarySearch.h */,
 				7600485F1E00096B00694CA6 /* WRBinarySearch.m */,
-				76C32B7B1DC124F70080FAC0 /* BinarySearch.swift */,
 				76DF46461DCF582B0025C8FA /* Sorting */,
 			);
 			name = Array;

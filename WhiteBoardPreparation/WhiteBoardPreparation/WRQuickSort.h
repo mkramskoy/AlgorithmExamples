@@ -13,3 +13,16 @@
 + (void)run;
 
 @end
+
+
+typedef NS_ENUM(NSUInteger, WRQuickSortPivotChoice) {
+    WRPivotChoiceFirst,
+    WRPivotChoiceRandom,
+    WRPivotChoiceMedian,
+};
+
+@interface NSArray(WRQuickSort)
+
+- (void)wr_sortByQuickSort;
+
+@end
