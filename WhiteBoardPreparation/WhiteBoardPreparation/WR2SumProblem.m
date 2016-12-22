@@ -11,8 +11,8 @@
 @implementation WR2SumProblem
 
 + (void)run {
-    
     NSURL *fileURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"2sum" withExtension:@"txt"];
+    
     
     NSError *error = nil;
     NSString *string = [NSString stringWithContentsOfURL:fileURL encoding:NSUTF8StringEncoding error:&error];

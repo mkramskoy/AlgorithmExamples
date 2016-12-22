@@ -19,6 +19,7 @@
 		7636566D1DBBA2D8007196AF /* Range.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636566C1DBBA2D8007196AF /* Range.swift */; };
 		7636566F1DBE7239007196AF /* MaxHeapSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7636566E1DBE7239007196AF /* MaxHeapSort.swift */; };
 		763F5EA71DE7497300751A6E /* WRStackWithMaxNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 763F5EA61DE7497300751A6E /* WRStackWithMaxNumber.m */; };
+		7640EF7A1E098F8100BD83DD /* WRQuickSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 7640EF791E098F8100BD83DD /* WRQuickSort.m */; };
 		7652E3431DFB51C90034E4D8 /* WRPrimeNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 7652E3421DFB51C90034E4D8 /* WRPrimeNumber.m */; };
 		7652E3461DFB55D40034E4D8 /* WRAnagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 7652E3451DFB55D40034E4D8 /* WRAnagram.m */; };
 		7662895A1DF189EC001BAAE5 /* WRSubstringExistsInParent.m in Sources */ = {isa = PBXBuildFile; fileRef = 766289591DF189EC001BAAE5 /* WRSubstringExistsInParent.m */; };
@@ -37,6 +38,7 @@
 		76C9431B1DF62A33009DDB14 /* MoveZeroesToTheRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9431A1DF62A33009DDB14 /* MoveZeroesToTheRight.swift */; };
 		76DF46451DCF58010025C8FA /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF46441DCF58010025C8FA /* LinkedList.swift */; };
 		76DF464A1DCF8C710025C8FA /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF46491DCF8C710025C8FA /* Test.swift */; };
+		76EA52671E0BE12200778701 /* IntegerArray.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 764938881E0BE06D005122B8 /* IntegerArray.txt */; };
 		76F94B641DF70BFF004FD4D6 /* WRLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F94B631DF70BFF004FD4D6 /* WRLinkedList.m */; };
 		76FFD24B1E093F39004E9675 /* WRMergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FFD24A1E093F39004E9675 /* WRMergeSort.m */; };
 /* End PBXBuildFile section */
@@ -48,6 +50,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				76EA52671E0BE12200778701 /* IntegerArray.txt in CopyFiles */,
 				76989D151E0582BB00F5074B /* 2sum.txt in CopyFiles */,
 				76989D161E0582BB00F5074B /* Median.txt in CopyFiles */,
 			);
@@ -74,6 +77,9 @@
 		7636566E1DBE7239007196AF /* MaxHeapSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxHeapSort.swift; sourceTree = "<group>"; };
 		763F5EA51DE7497300751A6E /* WRStackWithMaxNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRStackWithMaxNumber.h; sourceTree = "<group>"; };
 		763F5EA61DE7497300751A6E /* WRStackWithMaxNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRStackWithMaxNumber.m; sourceTree = "<group>"; };
+		7640EF781E098F8100BD83DD /* WRQuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRQuickSort.h; sourceTree = "<group>"; };
+		7640EF791E098F8100BD83DD /* WRQuickSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRQuickSort.m; sourceTree = "<group>"; };
+		764938881E0BE06D005122B8 /* IntegerArray.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IntegerArray.txt; sourceTree = "<group>"; };
 		7652E3411DFB51C90034E4D8 /* WRPrimeNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRPrimeNumber.h; sourceTree = "<group>"; };
 		7652E3421DFB51C90034E4D8 /* WRPrimeNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRPrimeNumber.m; sourceTree = "<group>"; };
 		7652E3441DFB55D40034E4D8 /* WRAnagram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRAnagram.h; sourceTree = "<group>"; };
@@ -179,22 +185,21 @@
 			children = (
 				76B45C0A1DB6AB3600B762C2 /* main.swift */,
 				76DF46491DCF8C710025C8FA /* Test.swift */,
-				76C943191DF6242F009DDB14 /* SimpleLogic */,
+				76C943191DF6242F009DDB14 /* CommonSense */,
 				76DF46431DCF57DC0025C8FA /* Data Sctructures */,
 				7618C3F01DDB7AD400F3481B /* WhiteBoardPreparation-Bridging-Header.h */,
 			);
 			path = WhiteBoardPreparation;
 			sourceTree = "<group>";
 		};
-		76C943191DF6242F009DDB14 /* SimpleLogic */ = {
+		76C943191DF6242F009DDB14 /* CommonSense */ = {
 			isa = PBXGroup;
 			children = (
 				7636566C1DBBA2D8007196AF /* Range.swift */,
 				7652E3411DFB51C90034E4D8 /* WRPrimeNumber.h */,
 				7652E3421DFB51C90034E4D8 /* WRPrimeNumber.m */,
-				76989D131E0581FC00F5074B /* 2sum.txt */,
 			);
-			name = SimpleLogic;
+			name = CommonSense;
 			sourceTree = "<group>";
 		};
 		76C9431C1DF62A37009DDB14 /* Array */ = {
@@ -227,10 +232,13 @@
 		76DF46461DCF582B0025C8FA /* Sorting */ = {
 			isa = PBXGroup;
 			children = (
+				764938881E0BE06D005122B8 /* IntegerArray.txt */,
 				7636566A1DBB7B6C007196AF /* QuickSort.swift */,
 				76B45C111DB7C28000B762C2 /* MergeSort.swift */,
 				76FFD2491E093F39004E9675 /* WRMergeSort.h */,
 				76FFD24A1E093F39004E9675 /* WRMergeSort.m */,
+				7640EF781E098F8100BD83DD /* WRQuickSort.h */,
+				7640EF791E098F8100BD83DD /* WRQuickSort.m */,
 			);
 			name = Sorting;
 			sourceTree = "<group>";
@@ -261,6 +269,7 @@
 		76FFD24C1E0941BB004E9675 /* HashTable */ = {
 			isa = PBXGroup;
 			children = (
+				76989D131E0581FC00F5074B /* 2sum.txt */,
 				76989D101E05813800F5074B /* WR2SumProblem.h */,
 				76989D111E05813800F5074B /* WR2SumProblem.m */,
 			);
@@ -340,6 +349,7 @@
 				7605937A1DC2959F00530126 /* AddTwoBinaryNumbers.swift in Sources */,
 				76C9431B1DF62A33009DDB14 /* MoveZeroesToTheRight.swift in Sources */,
 				76B45C0B1DB6AB3600B762C2 /* main.swift in Sources */,
+				7640EF7A1E098F8100BD83DD /* WRQuickSort.m in Sources */,
 				76C32B801DC23D740080FAC0 /* Graph.swift in Sources */,
 				762AE7021DF7059C004A9629 /* WRLinkedListReverse.m in Sources */,
 				76DF464A1DCF8C710025C8FA /* Test.swift in Sources */,

@@ -11,6 +11,7 @@
 @interface NSArray(MergeSort)
 
 - (NSArray*)wr_sortedByMerge;
+- (NSArray*)wr_sortedByMergeCountingInverse:(NSInteger *)inverseCount;
 
 @end
 
