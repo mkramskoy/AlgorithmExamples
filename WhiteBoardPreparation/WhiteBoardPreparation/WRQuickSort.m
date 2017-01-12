@@ -41,7 +41,7 @@
     pivot = [self partitionAroundPivot:pivot range:range];
     
     [self wr_sortByQuickSortInRange:NSMakeRange(range.location, pivot - range.location) pivotChoice:pivotChoice];
-    [self wr_sortByQuickSortInRange:NSMakeRange(pivot + 1, range.length - (pivot - range.location + 1)) pivotChoice:pivotChoice];
+    [self wr_sortByQuickSortInRange:NSMakeRange(pivot + 1, range.length + range.location - pivot - 1) pivotChoice:pivotChoice];
 }
 
 - (NSUInteger)choosePivot:(WRQuickSortPivotChoice)pivotChoice inRange:(NSRange)range  {
