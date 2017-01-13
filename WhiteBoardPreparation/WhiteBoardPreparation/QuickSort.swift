@@ -21,7 +21,7 @@ extension Array where Element: Comparable {
     
     private mutating func sortBetween(_ startIndex: Int, _ endIndex: Int) {
         
-        if endIndex - startIndex <= 1 { return }
+        if endIndex - startIndex < 1 { return }
         
         var pivot = startIndex // just a random pivot choice
         

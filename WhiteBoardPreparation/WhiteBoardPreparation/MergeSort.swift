@@ -35,9 +35,6 @@ class MergeSort {
     
     class func merge(leftPart: [Int], rightPart: [Int], numberOfInverses:inout Int) -> [Int] {
         
-        print("leftPart:\n\(leftPart)\n")
-        print("rightPart:\n\(rightPart)\n")
-        
         var leftIndex = 0
         var rightIndex = 0
         
@@ -73,8 +70,6 @@ class MergeSort {
             orderedPile.append(rightPart[rightIndex])
             rightIndex += 1
         }
-        
-        print("Number of inverses = \n\(numberOfInverses)")
         
         return orderedPile
     }

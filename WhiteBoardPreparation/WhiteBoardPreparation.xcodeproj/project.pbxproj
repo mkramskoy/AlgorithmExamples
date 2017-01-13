@@ -36,6 +36,7 @@
 		76C32B7E1DC162780080FAC0 /* LinkedListReverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C32B7D1DC162780080FAC0 /* LinkedListReverse.swift */; };
 		76C32B801DC23D740080FAC0 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C32B7F1DC23D740080FAC0 /* Graph.swift */; };
 		76C9431B1DF62A33009DDB14 /* MoveZeroesToTheRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9431A1DF62A33009DDB14 /* MoveZeroesToTheRight.swift */; };
+		76DA28B71E2977DE00BCD354 /* PhoneFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DA28B61E2977DE00BCD354 /* PhoneFormatting.swift */; };
 		76DF46451DCF58010025C8FA /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF46441DCF58010025C8FA /* LinkedList.swift */; };
 		76DF464A1DCF8C710025C8FA /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF46491DCF8C710025C8FA /* Test.swift */; };
 		76EA52671E0BE12200778701 /* IntegerArray.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 764938881E0BE06D005122B8 /* IntegerArray.txt */; };
@@ -104,6 +105,7 @@
 		76C32B7D1DC162780080FAC0 /* LinkedListReverse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedListReverse.swift; sourceTree = "<group>"; };
 		76C32B7F1DC23D740080FAC0 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		76C9431A1DF62A33009DDB14 /* MoveZeroesToTheRight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveZeroesToTheRight.swift; sourceTree = "<group>"; };
+		76DA28B61E2977DE00BCD354 /* PhoneFormatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneFormatting.swift; sourceTree = "<group>"; };
 		76DF46441DCF58010025C8FA /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		76DF46491DCF8C710025C8FA /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		76F94B621DF70BFF004FD4D6 /* WRLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRLinkedList.h; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		766289571DF189CD001BAAE5 /* Strings */ = {
 			isa = PBXGroup;
 			children = (
+				76DA28B61E2977DE00BCD354 /* PhoneFormatting.swift */,
 				766289581DF189EC001BAAE5 /* WRSubstringExistsInParent.h */,
 				766289591DF189EC001BAAE5 /* WRSubstringExistsInParent.m */,
 				7652E3441DFB55D40034E4D8 /* WRAnagram.h */,
@@ -341,6 +344,7 @@
 				766B659F1E0349360086AF3B /* WRBinarySearchInString.m in Sources */,
 				7618C3F51DDB7B1200F3481B /* WRBracersBalance.m in Sources */,
 				7689F3E01DFF1AC000F30CB2 /* WRRunningMedian.m in Sources */,
+				76DA28B71E2977DE00BCD354 /* PhoneFormatting.swift in Sources */,
 				7636566F1DBE7239007196AF /* MaxHeapSort.swift in Sources */,
 				7652E3431DFB51C90034E4D8 /* WRPrimeNumber.m in Sources */,
 				7689F3DD1DFF16C500F30CB2 /* WRHeap.m in Sources */,
