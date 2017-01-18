@@ -13,17 +13,15 @@ class QuickSort {
 }
 
 extension Array where Element: Comparable {
-    
     public mutating func sortWithQuickSort() {
         
         sortBetween(0, self.count-1)
     }
     
     private mutating func sortBetween(_ startIndex: Int, _ endIndex: Int) {
-        
         if endIndex - startIndex < 1 { return }
         
-        var pivot = startIndex // just a random pivot choice
+        var pivot = choosePivotBetween(startIndex, endIndex)
         
         pivot = partitionAroundPivot(pivot, startIndex, endIndex)
         
@@ -31,8 +29,14 @@ extension Array where Element: Comparable {
         sortBetween(pivot+1, endIndex)
     }
     
-    private mutating func partitionAroundPivot(_ pivot: Int, _ startIndex: Int, _ endIndex: Int) -> Int {
+    func choosePivotBetween(_ begin: Int, _ end: Int) -> Int {
+        let randomPivot = begin + Int(arc4random_uniform(UInt32(end - begin)))
+        //print("Pivot choice: \(randomPivot)")
         
+        return randomPivot
+    }
+    
+    mutating func partitionAroundPivot(_ pivot: Int, _ startIndex: Int, _ endIndex: Int) -> Int {
         if startIndex != pivot {
             swap(&self[startIndex], &self[pivot])
         }

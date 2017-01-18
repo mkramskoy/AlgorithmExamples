@@ -56,4 +56,51 @@ class PhoneFormatting: NSObject {
         return string
     }
     
+//    func solution(_ S: String) -> String {
+//        let digitComponents = S.components(separatedBy: CharacterSet.decimalDigits.inverted)
+//        let s = digitComponents.reduce("", +)
+//        
+//        if s.characters.count < 3 {
+//            return s
+//        }
+//        
+//        var (result, mod) = s.components(each: 3)
+//        if mod.characters.count == 4 {
+//            result.append(contentsOf: mod.components(each: 2).result)
+//        } else if mod.characters.count == 5 {
+//            let index = mod.index(mod.startIndex, offsetBy: 3)
+//            result.append(mod.substring(to: index))
+//            result.append(mod.substring(from: index))
+//        }
+//        return result.joined(separator: "-")
+//    }
+
 }
+
+//extension String {
+//    func components(each: Int) -> (result: [String], mod: String) {
+//        let length = self.characters.count
+//        var result = [String]()
+//        if length < each {
+//            return (result, self)
+//        }
+//        
+//        var value = self
+//        var valueLength = value.characters.count
+//        let isEnough: EachComponents = { (value, each) in
+//            (value == 0) || (1...each-1).contains(value - each)
+//        }
+//        var flag = isEnough(valueLength, each)
+//        
+//        while !flag {
+//            let index = value.index(value.startIndex, offsetBy: each)
+//            let substring = value.substring(to: index)
+//            value = value.replacingOccurrences(of: substring, with: "")
+//            valueLength = value.characters.count
+//            result.append(substring)
+//            flag = isEnough(valueLength, each)
+//        }
+//        
+//        return (result, value)
+//    }
+//}

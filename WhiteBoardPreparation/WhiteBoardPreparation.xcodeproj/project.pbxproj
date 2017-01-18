@@ -39,6 +39,7 @@
 		76DA28B71E2977DE00BCD354 /* PhoneFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DA28B61E2977DE00BCD354 /* PhoneFormatting.swift */; };
 		76DF46451DCF58010025C8FA /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF46441DCF58010025C8FA /* LinkedList.swift */; };
 		76DF464A1DCF8C710025C8FA /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF46491DCF8C710025C8FA /* Test.swift */; };
+		76E881BD1E2F95C0008334DB /* RSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E881BC1E2F95C0008334DB /* RSelect.swift */; };
 		76EA52671E0BE12200778701 /* IntegerArray.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 764938881E0BE06D005122B8 /* IntegerArray.txt */; };
 		76F94B641DF70BFF004FD4D6 /* WRLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 76F94B631DF70BFF004FD4D6 /* WRLinkedList.m */; };
 		76FFD24B1E093F39004E9675 /* WRMergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 76FFD24A1E093F39004E9675 /* WRMergeSort.m */; };
@@ -108,6 +109,7 @@
 		76DA28B61E2977DE00BCD354 /* PhoneFormatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneFormatting.swift; sourceTree = "<group>"; };
 		76DF46441DCF58010025C8FA /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		76DF46491DCF8C710025C8FA /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		76E881BC1E2F95C0008334DB /* RSelect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSelect.swift; sourceTree = "<group>"; };
 		76F94B621DF70BFF004FD4D6 /* WRLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRLinkedList.h; sourceTree = "<group>"; };
 		76F94B631DF70BFF004FD4D6 /* WRLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRLinkedList.m; sourceTree = "<group>"; };
 		76FFD2491E093F39004E9675 /* WRMergeSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRMergeSort.h; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 			children = (
 				764938881E0BE06D005122B8 /* IntegerArray.txt */,
 				7636566A1DBB7B6C007196AF /* QuickSort.swift */,
+				76E881BC1E2F95C0008334DB /* RSelect.swift */,
 				76B45C111DB7C28000B762C2 /* MergeSort.swift */,
 				76FFD2491E093F39004E9675 /* WRMergeSort.h */,
 				76FFD24A1E093F39004E9675 /* WRMergeSort.m */,
@@ -355,6 +358,7 @@
 				76B45C0B1DB6AB3600B762C2 /* main.swift in Sources */,
 				7640EF7A1E098F8100BD83DD /* WRQuickSort.m in Sources */,
 				76C32B801DC23D740080FAC0 /* Graph.swift in Sources */,
+				76E881BD1E2F95C0008334DB /* RSelect.swift in Sources */,
 				762AE7021DF7059C004A9629 /* WRLinkedListReverse.m in Sources */,
 				76DF464A1DCF8C710025C8FA /* Test.swift in Sources */,
 				76DF46451DCF58010025C8FA /* LinkedList.swift in Sources */,
