@@ -9,9 +9,7 @@
 import Foundation
 
 class BreadthFirstSearch {
-    
     class func run() {
-        
         let graph = Graph()
         
         let nodeA = Vertex(label: "a")
@@ -38,16 +36,13 @@ class BreadthFirstSearch {
 }
 
 extension Graph {
-    
     func copyWithBFS() -> Graph {
-        
         let graphCopy = Graph()
         var copiedVertices = [String: Vertex]()
         
         for vertex in self.vertices where vertex.visited == false {
             
             self.BFS(startVertex: vertex, vertexBlock: { vertex in
-                
                 if vertex.visited == false {
                     vertex.visited = true
                     let vertexCopy = Vertex(label: vertex.label)
@@ -61,7 +56,6 @@ extension Graph {
                 return false
             },
             edgeBlock: { edge in
-                
                 if let source = copiedVertices[edge.source.label],
                     let neighbour = copiedVertices[edge.neighbour.label] {
                     let _ = source.addEdge(to: neighbour)
@@ -73,16 +67,13 @@ extension Graph {
     }
     
     func BFS(startVertex: Vertex, vertexBlock:(Vertex) -> Bool, edgeBlock:(Edge) -> Void) {
-        
         let queue = Queue()
-        
         queue.push(startVertex)
         
         let _ = vertexBlock(startVertex)
         
         while let vertex = queue.pop() as? Vertex {
             for edge in vertex.edges {
-                
                 if vertexBlock(edge.neighbour) {
                     queue.push(edge.neighbour)
                 }

@@ -16,3 +16,4 @@
 #import "WR2SumProblem.h"
 #import "WRMergeSort.h"
 #import "WRQuickSort.h"
+#import "WRBFS.h"

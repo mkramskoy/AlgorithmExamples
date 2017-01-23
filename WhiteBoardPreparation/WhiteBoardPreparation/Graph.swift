@@ -9,7 +9,6 @@
 import Foundation
 
 class Vertex {
-    
     var visited: Bool = false
     
     var edges = [Edge]()
@@ -20,7 +19,6 @@ class Vertex {
     }
     
     func addEdge(to neighbour: Vertex) -> Edge {
-        
         let edge = Edge(source: self, neighbour: neighbour)
         self.edges.append(edge)
         
@@ -33,32 +31,27 @@ class Vertex {
 }
 
 class Edge {
-    
     let source: Vertex
     let neighbour: Vertex
     
     let weight: Int
     
-    init (source: Vertex, neighbour: Vertex, weight: Int) {
-        
+    init(source: Vertex, neighbour: Vertex, weight: Int) {
         self.source = source
         self.neighbour = neighbour
         self.weight = weight
     }
     
     convenience init(source: Vertex, neighbour: Vertex) {
-        
         self.init(source: source, neighbour: neighbour, weight: 1)
     }
     
     func description() -> String {
-        
         return "from: \(source), to:\(neighbour), weight: \(weight)"
     }
 }
 
 class Graph {
-    
     var vertices: [Vertex]
     
     init() {
@@ -70,7 +63,6 @@ class Graph {
     }
     
     func description() -> String {
-        
         var string = ""
         for node in self.vertices {
             string += "\(node.description())\n"

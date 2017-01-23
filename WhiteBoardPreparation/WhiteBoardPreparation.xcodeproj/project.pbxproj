@@ -36,6 +36,8 @@
 		76C32B7E1DC162780080FAC0 /* LinkedListReverse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C32B7D1DC162780080FAC0 /* LinkedListReverse.swift */; };
 		76C32B801DC23D740080FAC0 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C32B7F1DC23D740080FAC0 /* Graph.swift */; };
 		76C9431B1DF62A33009DDB14 /* MoveZeroesToTheRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C9431A1DF62A33009DDB14 /* MoveZeroesToTheRight.swift */; };
+		76D8849F1E35330900272780 /* WRBFS.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D8849E1E35330900272780 /* WRBFS.m */; };
+		76D884A21E35333D00272780 /* WRGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 76D884A11E35333D00272780 /* WRGraph.m */; };
 		76DA28B71E2977DE00BCD354 /* PhoneFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DA28B61E2977DE00BCD354 /* PhoneFormatting.swift */; };
 		76DF46451DCF58010025C8FA /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF46441DCF58010025C8FA /* LinkedList.swift */; };
 		76DF464A1DCF8C710025C8FA /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DF46491DCF8C710025C8FA /* Test.swift */; };
@@ -106,6 +108,10 @@
 		76C32B7D1DC162780080FAC0 /* LinkedListReverse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedListReverse.swift; sourceTree = "<group>"; };
 		76C32B7F1DC23D740080FAC0 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		76C9431A1DF62A33009DDB14 /* MoveZeroesToTheRight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveZeroesToTheRight.swift; sourceTree = "<group>"; };
+		76D8849D1E35330900272780 /* WRBFS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRBFS.h; sourceTree = "<group>"; };
+		76D8849E1E35330900272780 /* WRBFS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRBFS.m; sourceTree = "<group>"; };
+		76D884A01E35333D00272780 /* WRGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRGraph.h; sourceTree = "<group>"; };
+		76D884A11E35333D00272780 /* WRGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRGraph.m; sourceTree = "<group>"; };
 		76DA28B61E2977DE00BCD354 /* PhoneFormatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneFormatting.swift; sourceTree = "<group>"; };
 		76DF46441DCF58010025C8FA /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		76DF46491DCF8C710025C8FA /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
@@ -255,6 +261,10 @@
 				763656681DBB78D8007196AF /* BFS.swift */,
 				76C32B791DC103DD0080FAC0 /* DFS.swift */,
 				76C32B7F1DC23D740080FAC0 /* Graph.swift */,
+				76D8849D1E35330900272780 /* WRBFS.h */,
+				76D8849E1E35330900272780 /* WRBFS.m */,
+				76D884A01E35333D00272780 /* WRGraph.h */,
+				76D884A11E35333D00272780 /* WRGraph.m */,
 			);
 			name = Graph;
 			sourceTree = "<group>";
@@ -355,6 +365,7 @@
 				762D43C51DF4B06A001B98F8 /* Heap.swift in Sources */,
 				7605937A1DC2959F00530126 /* AddTwoBinaryNumbers.swift in Sources */,
 				76C9431B1DF62A33009DDB14 /* MoveZeroesToTheRight.swift in Sources */,
+				76D8849F1E35330900272780 /* WRBFS.m in Sources */,
 				76B45C0B1DB6AB3600B762C2 /* main.swift in Sources */,
 				7640EF7A1E098F8100BD83DD /* WRQuickSort.m in Sources */,
 				76C32B801DC23D740080FAC0 /* Graph.swift in Sources */,
@@ -374,6 +385,7 @@
 				762424941DDF8EDC000C5A69 /* WRQueueWithTwoStacks.m in Sources */,
 				7652E3461DFB55D40034E4D8 /* WRAnagram.m in Sources */,
 				760048601E00096B00694CA6 /* WRBinarySearch.m in Sources */,
+				76D884A21E35333D00272780 /* WRGraph.m in Sources */,
 				7636566D1DBBA2D8007196AF /* Range.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

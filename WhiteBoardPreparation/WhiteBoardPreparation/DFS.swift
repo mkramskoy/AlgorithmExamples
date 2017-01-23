@@ -32,9 +32,7 @@ class DFS {
 }
 
 extension Graph {
-    
     func DFS(graph: Graph) -> [String] {
-    
         var visitedNodes = [String]()
         
         for vertex in self.vertices where vertex.visited == false {
