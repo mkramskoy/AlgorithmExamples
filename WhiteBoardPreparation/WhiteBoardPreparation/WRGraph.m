@@ -33,6 +33,10 @@
     return edge;
 }
 
+- (NSString*)description {
+    return [NSString stringWithFormat:@"Vertex value = %@, visited = %@; ", self.label, @(self.visited)];
+}
+
 @end
 
 @interface WREdge()

@@ -24,6 +24,9 @@
 		7652E3461DFB55D40034E4D8 /* WRAnagram.m in Sources */ = {isa = PBXBuildFile; fileRef = 7652E3451DFB55D40034E4D8 /* WRAnagram.m */; };
 		7662895A1DF189EC001BAAE5 /* WRSubstringExistsInParent.m in Sources */ = {isa = PBXBuildFile; fileRef = 766289591DF189EC001BAAE5 /* WRSubstringExistsInParent.m */; };
 		766B659F1E0349360086AF3B /* WRBinarySearchInString.m in Sources */ = {isa = PBXBuildFile; fileRef = 766B659E1E0349360086AF3B /* WRBinarySearchInString.m */; };
+		7670F75C1E3B9DD000A9B4AF /* WRShortesPathBFS.m in Sources */ = {isa = PBXBuildFile; fileRef = 7670F75B1E3B9DD000A9B4AF /* WRShortesPathBFS.m */; };
+		7670F75F1E3B9E7A00A9B4AF /* WRGraph+TestData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7670F75E1E3B9E7A00A9B4AF /* WRGraph+TestData.m */; };
+		7670F7641E3BA0EE00A9B4AF /* WRQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7670F7631E3BA0EE00A9B4AF /* WRQueue.m */; };
 		7689F3DD1DFF16C500F30CB2 /* WRHeap.m in Sources */ = {isa = PBXBuildFile; fileRef = 7689F3DC1DFF16C500F30CB2 /* WRHeap.m */; };
 		7689F3E01DFF1AC000F30CB2 /* WRRunningMedian.m in Sources */ = {isa = PBXBuildFile; fileRef = 7689F3DF1DFF1AC000F30CB2 /* WRRunningMedian.m */; };
 		76989D121E05813800F5074B /* WR2SumProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = 76989D111E05813800F5074B /* WR2SumProblem.m */; };
@@ -92,6 +95,12 @@
 		766289591DF189EC001BAAE5 /* WRSubstringExistsInParent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRSubstringExistsInParent.m; sourceTree = "<group>"; };
 		766B659D1E0349360086AF3B /* WRBinarySearchInString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRBinarySearchInString.h; sourceTree = "<group>"; };
 		766B659E1E0349360086AF3B /* WRBinarySearchInString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRBinarySearchInString.m; sourceTree = "<group>"; };
+		7670F75A1E3B9DD000A9B4AF /* WRShortesPathBFS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRShortesPathBFS.h; sourceTree = "<group>"; };
+		7670F75B1E3B9DD000A9B4AF /* WRShortesPathBFS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRShortesPathBFS.m; sourceTree = "<group>"; };
+		7670F75D1E3B9E7A00A9B4AF /* WRGraph+TestData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WRGraph+TestData.h"; sourceTree = "<group>"; };
+		7670F75E1E3B9E7A00A9B4AF /* WRGraph+TestData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WRGraph+TestData.m"; sourceTree = "<group>"; };
+		7670F7621E3BA0EE00A9B4AF /* WRQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRQueue.h; sourceTree = "<group>"; };
+		7670F7631E3BA0EE00A9B4AF /* WRQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRQueue.m; sourceTree = "<group>"; };
 		7689F3DB1DFF16C500F30CB2 /* WRHeap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRHeap.h; sourceTree = "<group>"; };
 		7689F3DC1DFF16C500F30CB2 /* WRHeap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRHeap.m; sourceTree = "<group>"; };
 		7689F3DE1DFF1AC000F30CB2 /* WRRunningMedian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRRunningMedian.h; sourceTree = "<group>"; };
@@ -137,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				762D43C61DF5B12C001B98F8 /* Queue.swift */,
+				7670F7621E3BA0EE00A9B4AF /* WRQueue.h */,
+				7670F7631E3BA0EE00A9B4AF /* WRQueue.m */,
 				7618C3F31DDB7B1200F3481B /* WRBracersBalance.h */,
 				7618C3F41DDB7B1200F3481B /* WRBracersBalance.m */,
 				762424921DDF8EDC000C5A69 /* WRQueueWithTwoStacks.h */,
@@ -147,18 +158,16 @@
 			name = "Stack & Queue";
 			sourceTree = "<group>";
 		};
-		762D43C31DF4B059001B98F8 /* Heap */ = {
+		762D43C31DF4B059001B98F8 /* HeapProblems */ = {
 			isa = PBXGroup;
 			children = (
+				7670F7611E3B9F4900A9B4AF /* Heap */,
 				7636566E1DBE7239007196AF /* MaxHeapSort.swift */,
-				762D43C41DF4B06A001B98F8 /* Heap.swift */,
-				7689F3DB1DFF16C500F30CB2 /* WRHeap.h */,
-				7689F3DC1DFF16C500F30CB2 /* WRHeap.m */,
 				7689F3DE1DFF1AC000F30CB2 /* WRRunningMedian.h */,
 				7689F3DF1DFF1AC000F30CB2 /* WRRunningMedian.m */,
 				76989D141E0581FC00F5074B /* Median.txt */,
 			);
-			name = Heap;
+			name = HeapProblems;
 			sourceTree = "<group>";
 		};
 		766289571DF189CD001BAAE5 /* Strings */ = {
@@ -173,6 +182,28 @@
 				766B659E1E0349360086AF3B /* WRBinarySearchInString.m */,
 			);
 			name = Strings;
+			sourceTree = "<group>";
+		};
+		7670F7601E3B9F1500A9B4AF /* Graph */ = {
+			isa = PBXGroup;
+			children = (
+				76C32B7F1DC23D740080FAC0 /* Graph.swift */,
+				76D884A01E35333D00272780 /* WRGraph.h */,
+				76D884A11E35333D00272780 /* WRGraph.m */,
+				7670F75D1E3B9E7A00A9B4AF /* WRGraph+TestData.h */,
+				7670F75E1E3B9E7A00A9B4AF /* WRGraph+TestData.m */,
+			);
+			name = Graph;
+			sourceTree = "<group>";
+		};
+		7670F7611E3B9F4900A9B4AF /* Heap */ = {
+			isa = PBXGroup;
+			children = (
+				762D43C41DF4B06A001B98F8 /* Heap.swift */,
+				7689F3DB1DFF16C500F30CB2 /* WRHeap.h */,
+				7689F3DC1DFF16C500F30CB2 /* WRHeap.m */,
+			);
+			name = Heap;
 			sourceTree = "<group>";
 		};
 		76B45BFE1DB6AB3600B762C2 = {
@@ -194,10 +225,16 @@
 		76B45C091DB6AB3600B762C2 /* WhiteBoardPreparation */ = {
 			isa = PBXGroup;
 			children = (
-				76B45C0A1DB6AB3600B762C2 /* main.swift */,
 				76DF46491DCF8C710025C8FA /* Test.swift */,
+				76B45C0A1DB6AB3600B762C2 /* main.swift */,
 				76C943191DF6242F009DDB14 /* CommonSense */,
-				76DF46431DCF57DC0025C8FA /* Data Sctructures */,
+				76DF46481DCF58630025C8FA /* LinkedList */,
+				7618C3F61DDB7C6500F3481B /* Stack & Queue */,
+				766289571DF189CD001BAAE5 /* Strings */,
+				76C9431C1DF62A37009DDB14 /* Array */,
+				76FFD24C1E0941BB004E9675 /* HashTableProblems */,
+				76DF46471DCF584E0025C8FA /* GraphProblems */,
+				762D43C31DF4B059001B98F8 /* HeapProblems */,
 				7618C3F01DDB7AD400F3481B /* WhiteBoardPreparation-Bridging-Header.h */,
 			);
 			path = WhiteBoardPreparation;
@@ -226,20 +263,6 @@
 			name = Array;
 			sourceTree = "<group>";
 		};
-		76DF46431DCF57DC0025C8FA /* Data Sctructures */ = {
-			isa = PBXGroup;
-			children = (
-				76DF46481DCF58630025C8FA /* LinkedList */,
-				7618C3F61DDB7C6500F3481B /* Stack & Queue */,
-				766289571DF189CD001BAAE5 /* Strings */,
-				76C9431C1DF62A37009DDB14 /* Array */,
-				76FFD24C1E0941BB004E9675 /* HashTable */,
-				76DF46471DCF584E0025C8FA /* Graph */,
-				762D43C31DF4B059001B98F8 /* Heap */,
-			);
-			name = "Data Sctructures";
-			sourceTree = "<group>";
-		};
 		76DF46461DCF582B0025C8FA /* Sorting */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,18 +278,18 @@
 			name = Sorting;
 			sourceTree = "<group>";
 		};
-		76DF46471DCF584E0025C8FA /* Graph */ = {
+		76DF46471DCF584E0025C8FA /* GraphProblems */ = {
 			isa = PBXGroup;
 			children = (
+				7670F7601E3B9F1500A9B4AF /* Graph */,
 				763656681DBB78D8007196AF /* BFS.swift */,
 				76C32B791DC103DD0080FAC0 /* DFS.swift */,
-				76C32B7F1DC23D740080FAC0 /* Graph.swift */,
 				76D8849D1E35330900272780 /* WRBFS.h */,
 				76D8849E1E35330900272780 /* WRBFS.m */,
-				76D884A01E35333D00272780 /* WRGraph.h */,
-				76D884A11E35333D00272780 /* WRGraph.m */,
+				7670F75A1E3B9DD000A9B4AF /* WRShortesPathBFS.h */,
+				7670F75B1E3B9DD000A9B4AF /* WRShortesPathBFS.m */,
 			);
-			name = Graph;
+			name = GraphProblems;
 			sourceTree = "<group>";
 		};
 		76DF46481DCF58630025C8FA /* LinkedList */ = {
@@ -282,14 +305,14 @@
 			name = LinkedList;
 			sourceTree = "<group>";
 		};
-		76FFD24C1E0941BB004E9675 /* HashTable */ = {
+		76FFD24C1E0941BB004E9675 /* HashTableProblems */ = {
 			isa = PBXGroup;
 			children = (
 				76989D131E0581FC00F5074B /* 2sum.txt */,
 				76989D101E05813800F5074B /* WR2SumProblem.h */,
 				76989D111E05813800F5074B /* WR2SumProblem.m */,
 			);
-			name = HashTable;
+			name = HashTableProblems;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,14 +377,17 @@
 			files = (
 				76C32B7C1DC124F70080FAC0 /* BinarySearch.swift in Sources */,
 				76FFD24B1E093F39004E9675 /* WRMergeSort.m in Sources */,
+				7670F7641E3BA0EE00A9B4AF /* WRQueue.m in Sources */,
 				766B659F1E0349360086AF3B /* WRBinarySearchInString.m in Sources */,
 				7618C3F51DDB7B1200F3481B /* WRBracersBalance.m in Sources */,
 				7689F3E01DFF1AC000F30CB2 /* WRRunningMedian.m in Sources */,
 				76DA28B71E2977DE00BCD354 /* PhoneFormatting.swift in Sources */,
 				7636566F1DBE7239007196AF /* MaxHeapSort.swift in Sources */,
 				7652E3431DFB51C90034E4D8 /* WRPrimeNumber.m in Sources */,
+				7670F75F1E3B9E7A00A9B4AF /* WRGraph+TestData.m in Sources */,
 				7689F3DD1DFF16C500F30CB2 /* WRHeap.m in Sources */,
 				76B45C121DB7C28000B762C2 /* MergeSort.swift in Sources */,
+				7670F75C1E3B9DD000A9B4AF /* WRShortesPathBFS.m in Sources */,
 				762D43C51DF4B06A001B98F8 /* Heap.swift in Sources */,
 				7605937A1DC2959F00530126 /* AddTwoBinaryNumbers.swift in Sources */,
 				76C9431B1DF62A33009DDB14 /* MoveZeroesToTheRight.swift in Sources */,

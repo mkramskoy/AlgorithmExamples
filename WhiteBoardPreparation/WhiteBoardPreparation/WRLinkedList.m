@@ -11,10 +11,8 @@
 @implementation WRNode
 
 - (instancetype)initWithValue:(id)value {
-    
     self = [super init];
-    
-    if ( self ) {
+    if (self) {
         self.value = value;
     }
     
@@ -27,10 +25,8 @@
 @implementation WRLinkedList
 
 - (WRLinkedList*)initWithHead:(WRNode*)node {
-    
     self = [super init];
-    
-    if ( self ) {
+    if (self) {
         self.head = node;
     }
     
@@ -38,7 +34,6 @@
 }
 
 - (void)push:(id)object {
-    
     WRNode *node = [WRNode new];
     node.value = object;
     node.next = self.head;
@@ -47,7 +42,6 @@
 }
 
 - (id)pop {
-    
     NSNumber *valueToReturn = self.head.value;
     self.head = self.head.next;
     
@@ -55,12 +49,10 @@
 }
 
 - (id)peek {
-    
     return self.head.value;
 }
 
 - (NSString*)description {
-    
     NSMutableString *desc = [NSMutableString new];
     WRNode *node = self.head;
     while (node) {

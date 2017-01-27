@@ -17,3 +17,4 @@
 #import "WRMergeSort.h"
 #import "WRQuickSort.h"
 #import "WRBFS.h"
+#import "WRShortesPathBFS.h"

@@ -12,12 +12,10 @@
 @implementation WRLinkedList(Reverse)
 
 - (void)reverse {
-    
     [self reverseFromIndex:0];
 }
 
 - (void)reverseFromIndex:(NSUInteger)index {
-    
     WRNode *node;
     WRNode *current;
     if ( index == 0 ) {
@@ -50,7 +48,6 @@
 }
 
 - (WRNode*)nodeAtIndex:(NSUInteger)index {
-    
     WRNode *currentNode = self.head;
     NSUInteger currentIndex = 0;
     
@@ -72,7 +69,6 @@
 @implementation WRLinkedListReverse
 
 + (void)run {
-    
     WRNode *node5 = [[WRNode alloc] initWithValue:@"5"];
     node5.next = nil;
     WRNode *node4 = [[WRNode alloc] initWithValue:@"4"];

@@ -7,6 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WRLinkedList.h"
+
+@interface WRLinkedList(Reverse)
+
+- (void)reverse;
+
+@end
 
 @interface WRLinkedListReverse : NSObject
 
