@@ -10,7 +10,7 @@
 
 @interface NSString(WRIndexOfSubstring)
 
-- (NSUInteger)indexOfSubstring:(NSString*)substring;
+- (NSUInteger)wr_indexOfSubstring:(NSString*)substring;
 
 @end
 

@@ -11,43 +11,49 @@
 @implementation WRSubstringExistsInParent
 
 + (void)run {
-    
-    __unused NSInteger result1 = [@"MNABCOP" indexOfSubstring:@"ABC"];
-    __unused NSInteger result2 = [@"FDABABC" indexOfSubstring:@"ABC"];
-    __unused NSInteger result3 = [@"BA" indexOfSubstring:@"AB"];
-    __unused NSInteger result4 = [@"AB" indexOfSubstring:@"AB"];
-    __unused NSInteger result5 = [@"AaAB" indexOfSubstring:@"AB"];
+    __unused NSInteger result1 = [@"AA" wr_indexOfSubstring:@"A"];
+    __unused NSInteger result2 = [@"BA" wr_indexOfSubstring:@"AB"];
+    __unused NSInteger result3 = [@"AB" wr_indexOfSubstring:@"AB"];
+    __unused NSInteger result4 = [@"AaAB" wr_indexOfSubstring:@"AB"];
+    __unused NSInteger result5 = [@"MNABCOP" wr_indexOfSubstring:@"ABC"];
+    __unused NSInteger result6 = [@"FDABABC" wr_indexOfSubstring:@"ABC"];
 }
 
 @end
 
 @implementation NSString(WRIndexOfSubstring)
 
-- (NSUInteger)indexOfSubstring:(NSString*)substring {
-    
-    if ( !substring || substring.length > self.length ) {
+- (NSUInteger)wr_indexOfSubstring:(NSString*)substring {
+    if (!substring || substring.length == 0) {
         return NSNotFound;
     }
-    
-    for ( int i=0; i < self.length - substring.length + 1; i++) {
-        unichar firstLetter = [self characterAtIndex:i];
-        unichar lastLetter = [self characterAtIndex:i+substring.length-1];
-        
-        if ( firstLetter == [substring characterAtIndex:0] && lastLetter == [substring characterAtIndex:substring.length - 1] ) {
-            BOOL mismatchFound = NO;
-            for ( int j=1; j<substring.length-1; j++) {
-                if ( [self characterAtIndex:i+j] != [substring characterAtIndex:j] ) {
-                    mismatchFound = YES;
-                }
-            }
-            
-            if ( !mismatchFound ) {
-                return i;
-            }
+
+    for (NSUInteger index=0; index < self.length-substring.length+1; index++) {
+        if ( [self wr_containsSubstring:substring atIndex:index] ) {
+            return index;
         }
     }
     
     return NSNotFound;
+}
+
+- (BOOL)wr_containsSubstring:(NSString*)substring atIndex:(NSUInteger)index {
+    unichar firstLetter = [self characterAtIndex:index];
+    unichar lastLetter = [self characterAtIndex:index+substring.length - 1];
+    
+    if (firstLetter != [substring characterAtIndex:0] ||
+        lastLetter != [substring characterAtIndex:substring.length-1]) {
+        return NO;
+    }
+    
+    for (NSUInteger j=1; j < substring.length - 1; j++) {
+        unichar currentLetter = [self characterAtIndex:index+j];
+        if (currentLetter != [substring characterAtIndex:j]) {
+            return NO;
+        }
+    }
+    
+    return YES;
 }
 
 @end
