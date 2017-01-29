@@ -155,7 +155,6 @@
 			children = (
 				7618C3F31DDB7B1200F3481B /* WRBracersBalance.h */,
 				7618C3F41DDB7B1200F3481B /* WRBracersBalance.m */,
-				76DF46461DCF582B0025C8FA /* Sorting */,
 				762424921DDF8EDC000C5A69 /* WRQueueWithTwoStacks.h */,
 				762424931DDF8EDC000C5A69 /* WRQueueWithTwoStacks.m */,
 				763F5EA51DE7497300751A6E /* WRStackWithMaxNumber.h */,
@@ -302,6 +301,7 @@
 		76C9431C1DF62A37009DDB14 /* Array */ = {
 			isa = PBXGroup;
 			children = (
+				76DF46461DCF582B0025C8FA /* Sorting */,
 				76C9431A1DF62A33009DDB14 /* MoveZeroesToTheRight.swift */,
 				760593791DC2959F00530126 /* AddTwoBinaryNumbers.swift */,
 				76C32B7B1DC124F70080FAC0 /* BinarySearch.swift */,

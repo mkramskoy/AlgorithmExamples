@@ -14,19 +14,18 @@ class QuickSort {
 
 extension Array where Element: Comparable {
     public mutating func sortWithQuickSort() {
-        
         sortBetween(0, self.count-1)
     }
     
-    private mutating func sortBetween(_ startIndex: Int, _ endIndex: Int) {
-        if endIndex - startIndex < 1 { return }
+    private mutating func sortBetween(_ start: Int, _ end: Int) {
+        if end - start < 1 { return }
         
-        var pivot = choosePivotBetween(startIndex, endIndex)
+        var pivot = choosePivotBetween(start, end)
         
-        pivot = partitionAroundPivot(pivot, startIndex, endIndex)
+        pivot = partitionAroundPivot(pivot, start, end)
         
-        sortBetween(startIndex, pivot-1)
-        sortBetween(pivot+1, endIndex)
+        sortBetween(start, pivot-1)
+        sortBetween(pivot+1, end)
     }
     
     func choosePivotBetween(_ begin: Int, _ end: Int) -> Int {
@@ -36,15 +35,15 @@ extension Array where Element: Comparable {
         return randomPivot
     }
     
-    mutating func partitionAroundPivot(_ pivot: Int, _ startIndex: Int, _ endIndex: Int) -> Int {
-        if startIndex != pivot {
-            swap(&self[startIndex], &self[pivot])
+    mutating func partitionAroundPivot(_ pivot: Int, _ start: Int, _ end: Int) -> Int {
+        if start != pivot {
+            swap(&self[start], &self[pivot])
         }
         
-        var pivotIndex = startIndex
-        let pivotValue = self[startIndex]
+        var pivotIndex = start
+        let pivotValue = self[start]
         
-        for index in startIndex + 1...endIndex {
+        for index in start + 1...end {
             if self[index] < pivotValue {
                 pivotIndex += 1
                 if index != pivotIndex {
@@ -53,8 +52,8 @@ extension Array where Element: Comparable {
             }
         }
         
-        if pivotIndex != startIndex {
-            swap(&self[pivotIndex], &self[startIndex])
+        if pivotIndex != start {
+            swap(&self[pivotIndex], &self[start])
         }
         
         return pivotIndex
