@@ -9,7 +9,6 @@
 import Foundation
 
 class LinkedList {
-    
     var next: LinkedList? = nil
     let label: String
     

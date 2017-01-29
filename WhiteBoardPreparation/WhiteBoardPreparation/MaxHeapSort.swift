@@ -10,9 +10,7 @@ import Foundation
 
 
 class MaxHeapSort {
-    
     class func run() {
-        
         let heap = MaxHeap<Int>(array:[1, 17, 3, 6, 2, 34, 23, 103])
         
 //        heap.add(1)
@@ -25,7 +23,6 @@ class MaxHeapSort {
 //        heap.add(103)
         
         while !heap.isEmpty() {
-            
             print("\(heap.popMaxElement())")
         }
     }

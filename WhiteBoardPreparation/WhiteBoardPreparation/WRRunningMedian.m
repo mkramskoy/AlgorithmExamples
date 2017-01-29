@@ -19,7 +19,6 @@
 @implementation WRRunningMedian
 
 + (void)run {
-    
     WRRunningMedian *median = [WRRunningMedian new];
     
 //    [median addNumber:@12];
@@ -50,7 +49,6 @@
 }
 
 - (instancetype)init {
-    
     self = [super init];
     
     if ( self ) {
@@ -62,7 +60,6 @@
 }
 
 - (void)addNumber:(NSNumber*)number {
-    
     NSNumber *rightPartMin = [self.minHeap peekExtremum];
     
     if ( self.minHeap.count == 0 && self.maxHeap.count == 0 ) {
@@ -81,7 +78,6 @@
 }
 
 - (void)balanceHeaps {
-    
     if ( self.minHeap.count - self.maxHeap.count == 2 ) {
         [self.maxHeap add:[self.minHeap popExtremum]];
     }
@@ -92,7 +88,6 @@
 }
 
 - (NSNumber*)calculateMedian {
-    
     if ( self.minHeap.count > self.maxHeap.count ) {
         return self.minHeap.peekExtremum;
     }

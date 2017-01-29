@@ -13,7 +13,6 @@
 + (void)run {
     NSURL *fileURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"2sum" withExtension:@"txt"];
     
-    
     NSError *error = nil;
     NSString *string = [NSString stringWithContentsOfURL:fileURL encoding:NSUTF8StringEncoding error:&error];
     if ( error ) {
@@ -38,7 +37,6 @@
 }
 
 + (BOOL)lookForSum:(NSInteger)sum inSet:(NSSet*)set {
-    
     for ( NSNumber *number in set ) {
         NSNumber *numberToFind = @(sum - number.integerValue);
         
