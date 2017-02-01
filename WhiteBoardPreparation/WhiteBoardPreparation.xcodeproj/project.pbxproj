@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		760048601E00096B00694CA6 /* WRBinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 7600485F1E00096B00694CA6 /* WRBinarySearch.m */; };
 		7605937A1DC2959F00530126 /* AddTwoBinaryNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760593791DC2959F00530126 /* AddTwoBinaryNumbers.swift */; };
+		761834191E424FF400C548AF /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761834181E424FF400C548AF /* Trie.swift */; };
+		7618341B1E4257FA00C548AF /* PartialSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7618341A1E4257FA00C548AF /* PartialSearch.swift */; };
 		7618C3F51DDB7B1200F3481B /* WRBracersBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = 7618C3F41DDB7B1200F3481B /* WRBracersBalance.m */; };
 		762424941DDF8EDC000C5A69 /* WRQueueWithTwoStacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 762424931DDF8EDC000C5A69 /* WRQueueWithTwoStacks.m */; };
 		762AE7021DF7059C004A9629 /* WRLinkedListReverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 762AE7011DF7059C004A9629 /* WRLinkedListReverse.m */; };
@@ -72,6 +74,8 @@
 		7600485E1E00096B00694CA6 /* WRBinarySearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRBinarySearch.h; sourceTree = "<group>"; };
 		7600485F1E00096B00694CA6 /* WRBinarySearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRBinarySearch.m; sourceTree = "<group>"; };
 		760593791DC2959F00530126 /* AddTwoBinaryNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTwoBinaryNumbers.swift; sourceTree = "<group>"; };
+		761834181E424FF400C548AF /* Trie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
+		7618341A1E4257FA00C548AF /* PartialSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartialSearch.swift; sourceTree = "<group>"; };
 		7618C3F01DDB7AD400F3481B /* WhiteBoardPreparation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhiteBoardPreparation-Bridging-Header.h"; sourceTree = "<group>"; };
 		7618C3F31DDB7B1200F3481B /* WRBracersBalance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRBracersBalance.h; sourceTree = "<group>"; };
 		7618C3F41DDB7B1200F3481B /* WRBracersBalance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRBracersBalance.m; sourceTree = "<group>"; };
@@ -150,6 +154,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7618341C1E4262EA00C548AF /* Trie */ = {
+			isa = PBXGroup;
+			children = (
+				761834181E424FF400C548AF /* Trie.swift */,
+			);
+			name = Trie;
+			sourceTree = "<group>";
+		};
 		7618C3F61DDB7C6500F3481B /* Stack&Queue Problems */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,6 +197,7 @@
 				7652E3451DFB55D40034E4D8 /* WRAnagram.m */,
 				766B659D1E0349360086AF3B /* WRBinarySearchInString.h */,
 				766B659E1E0349360086AF3B /* WRBinarySearchInString.m */,
+				7618341A1E4257FA00C548AF /* PartialSearch.swift */,
 			);
 			name = "String Problems";
 			sourceTree = "<group>";
@@ -236,6 +249,7 @@
 				7670F7601E3B9F1500A9B4AF /* Graph */,
 				7670F76B1E3E1FBF00A9B4AF /* LinkedList */,
 				7670F76C1E3E1FE200A9B4AF /* Stack&Queue */,
+				7618341C1E4262EA00C548AF /* Trie */,
 			);
 			name = "Data structures";
 			sourceTree = "<group>";
@@ -423,6 +437,7 @@
 				76C32B7C1DC124F70080FAC0 /* BinarySearch.swift in Sources */,
 				76FFD24B1E093F39004E9675 /* WRMergeSort.m in Sources */,
 				7670F7641E3BA0EE00A9B4AF /* WRQueue.m in Sources */,
+				761834191E424FF400C548AF /* Trie.swift in Sources */,
 				7670F76A1E3E1E0C00A9B4AF /* NSArray+TestData.m in Sources */,
 				766B659F1E0349360086AF3B /* WRBinarySearchInString.m in Sources */,
 				7618C3F51DDB7B1200F3481B /* WRBracersBalance.m in Sources */,
@@ -446,6 +461,7 @@
 				76DF464A1DCF8C710025C8FA /* Test.swift in Sources */,
 				76DF46451DCF58010025C8FA /* LinkedList.swift in Sources */,
 				76C32B7E1DC162780080FAC0 /* LinkedListReverse.swift in Sources */,
+				7618341B1E4257FA00C548AF /* PartialSearch.swift in Sources */,
 				763656691DBB78D8007196AF /* BFS.swift in Sources */,
 				7662895A1DF189EC001BAAE5 /* WRSubstringExistsInParent.m in Sources */,
 				76989D121E05813800F5074B /* WR2SumProblem.m in Sources */,

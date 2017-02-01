@@ -67,12 +67,12 @@ extension Graph {
     }
     
     func BFS(startVertex: Vertex, vertexBlock:(Vertex) -> Bool, edgeBlock:(Edge) -> Void) {
-        let queue = Queue()
+        let queue = Queue<Vertex>()
         queue.push(startVertex)
         
         let _ = vertexBlock(startVertex)
         
-        while let vertex = queue.pop() as? Vertex {
+        while let vertex = queue.pop() {
             for edge in vertex.edges {
                 if vertexBlock(edge.neighbour) {
                     queue.push(edge.neighbour)

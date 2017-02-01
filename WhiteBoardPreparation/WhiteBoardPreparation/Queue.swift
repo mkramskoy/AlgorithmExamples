@@ -8,19 +8,19 @@
 
 import Foundation
 
-class Queue {
+class Queue<T> {
     
-    private var array = [Any]()
+    private var array = [T]()
     
-    func pop() -> Any? {
+    func pop() -> T? {
         return self.isEmpty() ? nil : self.array.removeFirst()
     }
     
-    func push(_ element: Any) {
+    func push(_ element: T) {
         self.array.append(element)
     }
     
-    func peek() -> Any? {
+    func peek() -> T? {
         return self.isEmpty() ? nil : self.array.first
     }
     
