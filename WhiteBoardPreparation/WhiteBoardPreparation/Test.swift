@@ -9,7 +9,6 @@
 import Foundation
 
 class Test {
-    
     class func run() {
 
 

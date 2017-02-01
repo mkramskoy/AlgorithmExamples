@@ -8,4 +8,4 @@
 
 import Foundation
 
-WRSubstringExistsInParent.run()
+Test.run()

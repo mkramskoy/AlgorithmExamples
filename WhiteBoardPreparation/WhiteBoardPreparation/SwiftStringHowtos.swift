@@ -39,7 +39,7 @@ class SwiftStringHowtos {
         
         //converting string into array of ints
         let intString = "12345"
-        let _: [Int] = intString.characters.enumerated ().map { index, character -> Int in
+        let _: [Int] = intString.characters.enumerated().map { index, character -> Int in
             return Int(String(character))!
         }
     }
