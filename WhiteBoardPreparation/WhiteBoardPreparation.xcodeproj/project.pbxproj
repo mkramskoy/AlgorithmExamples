@@ -12,6 +12,8 @@
 		761834191E424FF400C548AF /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761834181E424FF400C548AF /* Trie.swift */; };
 		7618341B1E4257FA00C548AF /* PartialSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7618341A1E4257FA00C548AF /* PartialSearch.swift */; };
 		7618341E1E426AB300C548AF /* LonelyInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7618341D1E426AB300C548AF /* LonelyInteger.swift */; };
+		761834211E44DDAE00C548AF /* FindSubviewInTreeCopy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761834201E44DDAE00C548AF /* FindSubviewInTreeCopy.swift */; };
+		761834231E44E81200C548AF /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761834221E44E81200C548AF /* Stack.swift */; };
 		7618C3F51DDB7B1200F3481B /* WRBracersBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = 7618C3F41DDB7B1200F3481B /* WRBracersBalance.m */; };
 		762424941DDF8EDC000C5A69 /* WRQueueWithTwoStacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 762424931DDF8EDC000C5A69 /* WRQueueWithTwoStacks.m */; };
 		762AE7021DF7059C004A9629 /* WRLinkedListReverse.m in Sources */ = {isa = PBXBuildFile; fileRef = 762AE7011DF7059C004A9629 /* WRLinkedListReverse.m */; };
@@ -78,6 +80,8 @@
 		761834181E424FF400C548AF /* Trie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
 		7618341A1E4257FA00C548AF /* PartialSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartialSearch.swift; sourceTree = "<group>"; };
 		7618341D1E426AB300C548AF /* LonelyInteger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LonelyInteger.swift; sourceTree = "<group>"; };
+		761834201E44DDAE00C548AF /* FindSubviewInTreeCopy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindSubviewInTreeCopy.swift; sourceTree = "<group>"; };
+		761834221E44E81200C548AF /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		7618C3F01DDB7AD400F3481B /* WhiteBoardPreparation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhiteBoardPreparation-Bridging-Header.h"; sourceTree = "<group>"; };
 		7618C3F31DDB7B1200F3481B /* WRBracersBalance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRBracersBalance.h; sourceTree = "<group>"; };
 		7618C3F41DDB7B1200F3481B /* WRBracersBalance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRBracersBalance.m; sourceTree = "<group>"; };
@@ -245,6 +249,7 @@
 		7670F76C1E3E1FE200A9B4AF /* Stack&Queue */ = {
 			isa = PBXGroup;
 			children = (
+				761834221E44E81200C548AF /* Stack.swift */,
 				762D43C61DF5B12C001B98F8 /* Queue.swift */,
 				7670F7621E3BA0EE00A9B4AF /* WRQueue.h */,
 				7670F7631E3BA0EE00A9B4AF /* WRQueue.m */,
@@ -361,6 +366,7 @@
 				76D8849E1E35330900272780 /* WRBFS.m */,
 				7670F75A1E3B9DD000A9B4AF /* WRShortesPathBFS.h */,
 				7670F75B1E3B9DD000A9B4AF /* WRShortesPathBFS.m */,
+				761834201E44DDAE00C548AF /* FindSubviewInTreeCopy.swift */,
 			);
 			name = GraphProblems;
 			sourceTree = "<group>";
@@ -452,8 +458,10 @@
 				7670F76A1E3E1E0C00A9B4AF /* NSArray+TestData.m in Sources */,
 				766B659F1E0349360086AF3B /* WRBinarySearchInString.m in Sources */,
 				7618C3F51DDB7B1200F3481B /* WRBracersBalance.m in Sources */,
+				761834211E44DDAE00C548AF /* FindSubviewInTreeCopy.swift in Sources */,
 				7689F3E01DFF1AC000F30CB2 /* WRRunningMedian.m in Sources */,
 				76DA28B71E2977DE00BCD354 /* PhoneFormatting.swift in Sources */,
+				761834231E44E81200C548AF /* Stack.swift in Sources */,
 				7636566F1DBE7239007196AF /* MaxHeapSort.swift in Sources */,
 				7652E3431DFB51C90034E4D8 /* WRPrimeNumber.m in Sources */,
 				7670F75F1E3B9E7A00A9B4AF /* WRGraph+TestData.m in Sources */,
