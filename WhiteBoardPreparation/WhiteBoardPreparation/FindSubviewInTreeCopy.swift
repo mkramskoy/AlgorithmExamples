@@ -33,7 +33,7 @@ class View {
         var coordinates = [Int]()
         while superview != nil {
             let subviews: [View] = superview!.subviews
-            let index: Int = subviews.index(of: currentView)
+            let index: Int = subviews.index(of: currentView)!
             
             coordinates.append(index)
             currentView = superview!
@@ -48,6 +48,12 @@ class View {
         
         return currentView
     }
+}
+
+extension View: Equatable { }
+
+func ==(lhs: View, rhs: View) -> Bool {
+    return lhs === rhs
 }
 
 class FindSubviewInTreeCopy {

@@ -9,8 +9,7 @@
 import Foundation
 
 class SwiftStringHowtos {
-    
-    func aaa() {
+    class func run() {
         //replacing characters
         let _ = "".trimmingCharacters(in: .whitespaces)
         let _ = "".replacingOccurrences(of: "\"", with: "", options: .literal, range:nil)
@@ -42,6 +41,19 @@ class SwiftStringHowtos {
         let _: [Int] = intString.characters.enumerated().map { index, character -> Int in
             return Int(String(character))!
         }
+        
+        //substrings
+        var subrangeString = "**ABC**"
+        let _ = subrangeString.substring(from: subrangeString.index(subrangeString.startIndex, offsetBy: 2)) //ABC**
+        if let range = subrangeString.range(of: "ABC") {
+            subrangeString.replaceSubrange(range, with: "XYZ")
+        }
+        
+        // Prefix
+        var prefixString = "000ABC000"
+        let _ = String(prefixString.characters.prefix(3)) //"000"
+        let _ = String(prefixString.characters.dropLast(3))  //"000ABC"
+
     }
 }
 
