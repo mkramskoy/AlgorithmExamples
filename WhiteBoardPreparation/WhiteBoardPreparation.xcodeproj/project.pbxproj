@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		760048601E00096B00694CA6 /* WRBinarySearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 7600485F1E00096B00694CA6 /* WRBinarySearch.m */; };
+		7604222B1E53A7F6006D5CD8 /* MaxProfitBuySell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7604222A1E53A7F6006D5CD8 /* MaxProfitBuySell.swift */; };
 		7605937A1DC2959F00530126 /* AddTwoBinaryNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760593791DC2959F00530126 /* AddTwoBinaryNumbers.swift */; };
 		761834191E424FF400C548AF /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761834181E424FF400C548AF /* Trie.swift */; };
 		7618341B1E4257FA00C548AF /* PartialSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7618341A1E4257FA00C548AF /* PartialSearch.swift */; };
@@ -76,6 +77,7 @@
 /* Begin PBXFileReference section */
 		7600485E1E00096B00694CA6 /* WRBinarySearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRBinarySearch.h; sourceTree = "<group>"; };
 		7600485F1E00096B00694CA6 /* WRBinarySearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRBinarySearch.m; sourceTree = "<group>"; };
+		7604222A1E53A7F6006D5CD8 /* MaxProfitBuySell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxProfitBuySell.swift; sourceTree = "<group>"; };
 		760593791DC2959F00530126 /* AddTwoBinaryNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTwoBinaryNumbers.swift; sourceTree = "<group>"; };
 		761834181E424FF400C548AF /* Trie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
 		7618341A1E4257FA00C548AF /* PartialSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartialSearch.swift; sourceTree = "<group>"; };
@@ -338,6 +340,7 @@
 				76E881BC1E2F95C0008334DB /* RSelect.swift */,
 				7600485E1E00096B00694CA6 /* WRBinarySearch.h */,
 				7600485F1E00096B00694CA6 /* WRBinarySearch.m */,
+				7604222A1E53A7F6006D5CD8 /* MaxProfitBuySell.swift */,
 			);
 			name = Array;
 			sourceTree = "<group>";
@@ -490,6 +493,7 @@
 				7636566B1DBB7B6C007196AF /* QuickSort.swift in Sources */,
 				7670F7701E3E20DE00A9B4AF /* SwiftStringHowtos.swift in Sources */,
 				76F94B641DF70BFF004FD4D6 /* WRLinkedList.m in Sources */,
+				7604222B1E53A7F6006D5CD8 /* MaxProfitBuySell.swift in Sources */,
 				76C32B7A1DC103DD0080FAC0 /* DFS.swift in Sources */,
 				762424941DDF8EDC000C5A69 /* WRQueueWithTwoStacks.m in Sources */,
 				7652E3461DFB55D40034E4D8 /* WRAnagram.m in Sources */,
